@@ -2,7 +2,7 @@
 
 Wrapper em NodeJS para chamadas SOAP.
 
-Conectando na base de consultas e métricas WDSL do Banco Central do Brasil:
+Conectando na base de SÉRIES TEMPORAIS em WDSL do Banco Central do Brasil:
 
 > <https://www3.bcb.gov.br/sgspub/localizarseries/localizarSeries.do?method=prepararTelaLocalizarSeries>
 
