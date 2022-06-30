@@ -20,8 +20,7 @@ Onde:
     code - código da métrica a ser consultada (12=CDI diário)
     date - data da métrica a ser consultada (30/01/2015)
 
-~~Até onde testei vai funcionar com qualquer código da página, respeitando o tipo de data esperado.~~
-Tá é ruim pakas, só funciona com alguns códigos, preciso deixar agnóstico.
+Até onde testei vai funcionar com qualquer código da página, respeitando o tipo de data esperado. Para campos mensais a data deve ser o último dia do mês.
 
 ## Enunciado do Trabalho
 
