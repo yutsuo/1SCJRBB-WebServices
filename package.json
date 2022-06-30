@@ -1,0 +1,21 @@
+{
+  "name": "bacen",
+  "version": "1.0.0",
+  "description": "NodeJS script to access BACEN's SOAP WSDL services",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "watch": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel de Oliveira Carvalho - Yutsuo",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "soap": "^0.45.0"
+  }
+}
