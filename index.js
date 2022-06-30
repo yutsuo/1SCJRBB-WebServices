@@ -45,5 +45,5 @@ bacenRoutes.route("/").get((req, res) => {
         console.log(`CDI (${args.data}) : ${result.getValorReturn["$value"]}`.yellow);
         res.json(parseFloat(result.getValorReturn["$value"]));
       })
-      .catch(e => { console.log(e) });
+      .catch(e => { console.log("error:", e) });
   });
