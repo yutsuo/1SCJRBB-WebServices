@@ -8,7 +8,7 @@ Conectando na base de consultas e métricas WDSL do Banco Central do Brasil:
 
 Por enquanto só funciona o básico.
 
-Subir o docker-copmpose
+Subir o docker-compose
 
 Requisição de teste:
 
