@@ -17,3 +17,5 @@ Requisição de teste:
 Onde:
     code - código da métrica a ser consultada (12=CDI diário)
     date - data da métrica a ser consultada (30/01/2015)
+
+Até onde testei vai funcionar com qualquer código da página, respeitando o tipo de data esperado.
