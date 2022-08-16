@@ -1,0 +1,422 @@
+[
+    {
+        "code": 189,
+        "short_name": "índice geral de preíos do mercado (IGP-M)",
+        "unit": "Var. % mensal",
+        "periodicity": "M",
+        "start_date": "30-06-1989",
+        "latest_date": "Jul-22",
+        "source": "FGV",
+        "special_flag": "N"
+    },
+    {
+        "code": 190,
+        "short_name": "índice geral de preíos-disponibilidade interna (IGP-DI)",
+        "unit": "Var. % mensal",
+        "periodicity": "M",
+        "start_date": "29-02-1944",
+        "latest_date": "Jun-22",
+        "source": "FGV",
+        "special_flag": "N"
+    },
+    {
+        "code": 191,
+        "short_name": "índice de preíos ao consumidor-Brasil (IPC-Br)",
+        "unit": "Var. % mensal",
+        "periodicity": "M",
+        "start_date": "31-01-1990",
+        "latest_date": "Jun-22",
+        "source": "FGV",
+        "special_flag": "N"
+    },
+    {
+        "code": 192,
+        "short_name": "índice nacional de custo da construíío (INCC)",
+        "unit": "Var. % mensal",
+        "periodicity": "M",
+        "start_date": "29-02-1944",
+        "latest_date": "Jun-22",
+        "source": "FGV",
+        "special_flag": "N"
+    },
+    {
+        "code": 225,
+        "short_name": "índice de preíos ao produtor amplo (IPA)",
+        "unit": "Var. % mensal",
+        "periodicity": "M",
+        "start_date": "29-02-1944",
+        "latest_date": "Jun-22",
+        "source": "FGV",
+        "special_flag": "N"
+    },
+    {
+        "code": 4467,
+        "short_name": "índice de Preíos ao Consumidor-Brasil (IPC-Br) - Nícleo",
+        "unit": "Var. % mensal",
+        "periodicity": "M",
+        "start_date": "31-01-1996",
+        "latest_date": "Jun-22",
+        "source": "FGV",
+        "special_flag": "N"
+    },
+    {
+        "code": 7447,
+        "short_name": "IGP-10",
+        "unit": "Var. % mensal",
+        "periodicity": "M",
+        "start_date": "30-09-1994",
+        "latest_date": "Jul-22",
+        "source": "FGV",
+        "special_flag": "N"
+    },
+    {
+        "code": 7448,
+        "short_name": "IGP-M - 1º Decênd",
+        "unit": "Var. % mensal",
+        "periodicity": "M",
+        "start_date": "31-08-1994",
+        "latest_date": "Jul-22",
+        "source": "FGV",
+        "special_flag": "N"
+    },
+    {
+        "code": 7449,
+        "short_name": "IGP-M - 2º Decênd",
+        "unit": "Var. % mensal",
+        "periodicity": "M",
+        "start_date": "31-08-1994",
+        "latest_date": "Jul-22",
+        "source": "FGV",
+        "special_flag": "N"
+    },
+    {
+        "code": 7450,
+        "short_name": "índice de Preíos por Atacado-Mercado (IPA-M)",
+        "unit": "Var. % mensal",
+        "periodicity": "M",
+        "start_date": "30-09-1994",
+        "latest_date": "Jul-22",
+        "source": "FGV",
+        "special_flag": "N"
+    },
+    {
+        "code": 7451,
+        "short_name": "IPA-M - 1º Decênd",
+        "unit": "Var. % mensal",
+        "periodicity": "M",
+        "start_date": "31-10-1994",
+        "latest_date": "Jul-22",
+        "source": "FGV",
+        "special_flag": "N"
+    },
+    {
+        "code": 7452,
+        "short_name": "IPA-M - 2º Decênd",
+        "unit": "Var. % mensal",
+        "periodicity": "M",
+        "start_date": "31-10-1994",
+        "latest_date": "Jul-22",
+        "source": "FGV",
+        "special_flag": "N"
+    },
+    {
+        "code": 7453,
+        "short_name": "índice de Preíos ao Consumidor-Mercado (IPC-M)",
+        "unit": "Var. % mensal",
+        "periodicity": "M",
+        "start_date": "30-09-1994",
+        "latest_date": "Jul-22",
+        "source": "FGV",
+        "special_flag": "N"
+    },
+    {
+        "code": 7454,
+        "short_name": "IPC-M - 1º Decênd",
+        "unit": "Var. % mensal",
+        "periodicity": "M",
+        "start_date": "31-10-1994",
+        "latest_date": "Jul-22",
+        "source": "FGV",
+        "special_flag": "N"
+    },
+    {
+        "code": 7455,
+        "short_name": "IPC-M - 2º Decênd",
+        "unit": "Var. % mensal",
+        "periodicity": "M",
+        "start_date": "31-10-1994",
+        "latest_date": "Jul-22",
+        "source": "FGV",
+        "special_flag": "N"
+    },
+    {
+        "code": 7456,
+        "short_name": "índice Nacional de Custo da Construíío-Mercado (INCC-M)",
+        "unit": "Var. % mensal",
+        "periodicity": "M",
+        "start_date": "30-09-1994",
+        "latest_date": "Jul-22",
+        "source": "FGV",
+        "special_flag": "N"
+    },
+    {
+        "code": 7457,
+        "short_name": "INCC-M - 1º Decênd",
+        "unit": "Var. % mensal",
+        "periodicity": "M",
+        "start_date": "31-10-1994",
+        "latest_date": "Jul-22",
+        "source": "FGV",
+        "special_flag": "N"
+    },
+    {
+        "code": 7458,
+        "short_name": "INCC-M - 2º Decênd",
+        "unit": "Var. % mensal",
+        "periodicity": "M",
+        "start_date": "31-10-1994",
+        "latest_date": "Jul-22",
+        "source": "FGV",
+        "special_flag": "N"
+    },
+    {
+        "code": 7459,
+        "short_name": "índice de Preíos por Atacado-Oferta Global (IPA-OG) - Produtos industriais",
+        "unit": "Var. % mensal",
+        "periodicity": "M",
+        "start_date": "31-01-1994",
+        "latest_date": "Jun-22",
+        "source": "FGV",
+        "special_flag": "N"
+    },
+    {
+        "code": 7460,
+        "short_name": "índice de Preíos por Atacado-Oferta Global (IPA-OG) - Produtos agrícolas",
+        "unit": "Var. % mensal",
+        "periodicity": "M",
+        "start_date": "31-01-1994",
+        "latest_date": "Jun-22",
+        "source": "FGV",
+        "special_flag": "N"
+    },
+    {
+        "code": 7461,
+        "short_name": "INCC-DI - Mão-de-obr",
+        "unit": "Var. % mensal",
+        "periodicity": "M",
+        "start_date": "31-01-1997",
+        "latest_date": "Jun-22",
+        "source": "FGV",
+        "special_flag": "N"
+    },
+    {
+        "code": 7462,
+        "short_name": "INCC-DI - Materiais e serviço",
+        "unit": "Var. % mensal",
+        "periodicity": "M",
+        "start_date": "31-01-1997",
+        "latest_date": "Jun-22",
+        "source": "FGV",
+        "special_flag": "N"
+    },
+    {
+        "code": "28655í",
+        "short_name": "IGP-M mensal - consistente com número índi",
+        "unit": "%",
+        "periodicity": "M",
+        "start_date": "01-06-1989",
+        "latest_date": "Jul-22",
+        "source": "FGV",
+        "special_flag": "N"
+    },
+    {
+        "code": 226,
+        "short_name": "Taxa referencial (TR)",
+        "unit": "% a.m.",
+        "periodicity": "D",
+        "start_date": "01-02-1991",
+        "latest_date": "02-08-2022",
+        "source": "BCB-Demab",
+        "special_flag": "S"
+    },
+    {
+        "code": 253,
+        "short_name": "Taxa básica financeira (TBF",
+        "unit": "% a.m.",
+        "periodicity": "D",
+        "start_date": "01-07-1995",
+        "latest_date": "02-08-2022",
+        "source": "BCB-Demab",
+        "special_flag": "S"
+    },
+    {
+        "code": 25359,
+        "short_name": "Indicador de Custo do Crédito - ICC - Recursos direcionados - Pessoas físicas - Tot",
+        "unit": "% a.a.",
+        "periodicity": "M",
+        "start_date": "01-01-2013",
+        "latest_date": "abr/2022",
+        "source": "BCB-DSTAT",
+        "special_flag": "N"
+    },
+    {
+        "code": 20716,
+        "short_name": "Taxa média de juros das operações de crédito - Pessoas físicas - ",
+        "unit": "% a.a.",
+        "periodicity": "M",
+        "start_date": "01-03-2011",
+        "latest_date": "abr/2022",
+        "source": "BCB-DSTAT",
+        "special_flag": "N"
+    },
+    {
+        "code": 20714,
+        "short_name": "Taxa média de juros das operações de crédito - T",
+        "unit": "% a.a.",
+        "periodicity": "M",
+        "start_date": "01-03-2011",
+        "latest_date": "abr/2022",
+        "source": "BCB-DSTAT",
+        "special_flag": "N"
+    },
+    {
+        "code": 20715,
+        "short_name": "Taxa média de juros das operações de crédito - Pessoas jurídicas - ",
+        "unit": "% a.a.",
+        "periodicity": "M",
+        "start_date": "01-03-2011",
+        "latest_date": "abr/2022",
+        "source": "BCB-DSTAT",
+        "special_flag": "N"
+    },
+    {
+        "code": 20718,
+        "short_name": "Taxa média de juros das operações de crédito com recursos livres - Pessoas jurídicas - ",
+        "unit": "% a.a.",
+        "periodicity": "M",
+        "start_date": "01-03-2011",
+        "latest_date": "abr/2022",
+        "source": "BCB-DSTAT",
+        "special_flag": "N"
+    },
+    {
+        "code": 20740,
+        "short_name": "Taxa média de juros das operações de crédito com recursos livres - Pessoas físicas - ",
+        "unit": "% a.a.",
+        "periodicity": "M",
+        "start_date": "01-03-2011",
+        "latest_date": "abr/2022",
+        "source": "BCB-DSTAT",
+        "special_flag": "N"
+    },
+    {
+        "code": 20717,
+        "short_name": "Taxa média de juros das operações de crédito com recursos livres - T",
+        "unit": "% a.a.",
+        "periodicity": "M",
+        "start_date": "01-03-2011",
+        "latest_date": "abr/2022",
+        "source": "BCB-DSTAT",
+        "special_flag": "N"
+    },
+    {
+        "code": 20757,
+        "short_name": "Taxa média de juros das operações de crédito com recursos direcionados - Pessoas jurídicas - ",
+        "unit": "% a.a.",
+        "periodicity": "M",
+        "start_date": "01-03-2011",
+        "latest_date": "abr/2022",
+        "source": "BCB-DSTAT",
+        "special_flag": "N"
+    },
+    {
+        "code": 1619,
+        "short_name": "Salário míni",
+        "unit": "u.m.c.",
+        "periodicity": "M",
+        "start_date": "31-01-1990",
+        "latest_date": "set/2022",
+        "source": "MTb",
+        "special_flag": "N"
+    },
+    {
+        "code": 422,
+        "short_name": "TBC anualizada",
+        "unit": "% a.a.",
+        "periodicity": "D",
+        "start_date": "01-07-1996",
+        "latest_date": "27-02-2004",
+        "source": "Copom",
+        "special_flag": "N"
+    },
+    {
+        "code": 423,
+        "short_name": "TBAN anualizada",
+        "unit": "% a.a.",
+        "periodicity": "D",
+        "start_date": "01-10-1996",
+        "latest_date": "27-02-2004",
+        "source": "Copom",
+        "special_flag": "N"
+    },
+    {
+        "code": 432,
+        "short_name": "Meta Selic definida pelo Copom",
+        "unit": "% a.a.",
+        "periodicity": "D",
+        "start_date": "05-03-1999",
+        "latest_date": "03-08-2022",
+        "source": "Copom",
+        "special_flag": "N"
+    },
+    {
+        "code": 13521,
+        "short_name": "Meta",
+        "unit": "%",
+        "periodicity": "A",
+        "start_date": "01-01-1999",
+        "latest_date": 2024,
+        "source": "BCB-Depec",
+        "special_flag": "N"
+    },
+    {
+        "code": 12,
+        "short_name": "Taxa de juros - CD",
+        "unit": "% a.d.",
+        "periodicity": "D",
+        "start_date": "06-03-1986",
+        "latest_date": "02-08-2022",
+        "source": "Cetip",
+        "special_flag": "N"
+    },
+    {
+        "code": 4389,
+        "short_name": "Taxa de juros - CDI anualizada base 2",
+        "unit": "% a.a.",
+        "periodicity": "D",
+        "start_date": "06-03-1986",
+        "latest_date": "02-08-2022",
+        "source": "BCB-Demab",
+        "special_flag": "N"
+    },
+    {
+        "code": 4391,
+        "short_name": "Taxa de juros - CDI acumulada no m",
+        "unit": "% a.m.",
+        "periodicity": "M",
+        "start_date": "31-07-1986",
+        "latest_date": "ago/2022",
+        "source": "BCB-Demab",
+        "special_flag": "N"
+    },
+    {
+        "code": 4392,
+        "short_name": "Taxa de juros - CDI acumulada no mês anualizada base ",
+        "unit": "% a.a.",
+        "periodicity": "M",
+        "start_date": "31-07-1986",
+        "latest_date": "ago/2022",
+        "source": "BCB-Demab",
+        "special_flag": "N"
+    }
+]
