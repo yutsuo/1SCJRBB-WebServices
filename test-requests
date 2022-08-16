@@ -1,0 +1,2 @@
+http://localhost:3001/bacen?code=226&date=16/08/2022
+http://localhost:3001/bacen/test?startDate=01/08/2022&endDate=15/08/2022&code=226
