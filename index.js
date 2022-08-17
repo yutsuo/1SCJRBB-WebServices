@@ -9,6 +9,7 @@ import colors from "colors";
 import dotenv from "dotenv";
 import fs from "fs";
 import moment from "moment";
+import { DateTime } from "luxon";
 
 let rawdata = fs.readFileSync('sgs-bacen.json');
 let sgsBacen = JSON.parse(rawdata);
@@ -54,7 +55,7 @@ bacenRoutes.route("/").get((req, res) => {
       console.log(`CDI (${args.data}) : ${result.getValorReturn["$value"]}`.yellow);
       res.json(parseFloat(result.getValorReturn["$value"]));
     })
-    .catch(e => { 
+    .catch(e => {
       console.log("error:", e);
       res.status(500).json(`error: ${e}`);
     });
@@ -74,25 +75,21 @@ bacenRoutes.route("/getInfo").get((req, res) => {
 bacenRoutes.route("/test").get((req, res) => {
   const url = "https://www3.bcb.gov.br/wssgs/services/FachadaWSSGS?wsdl";
   const code = parseInt(req.query.code);
-  // const startDate = req.query.startDate;
-  // const endDate = req.query.endDate;
 
-  const startDate = moment(req.query.startDate, "DD/MM/YYYY").format("YYYY-MM-DD");
-  const endDate = moment(req.query.endDate, "DD/MM/YYYY").format("YYYY-MM-DD");
+  console.log('req.query.startDate :>> ', req.query.startDate);
+  console.log('req.query.endDate :>> ', req.query.endDate);
 
+  const startDate = DateTime.fromFormat(req.query.startDate, "dd/MM/yyyy").toFormat("dd/MM/yyyy");
+  const endDate = DateTime.fromFormat(req.query.endDate, "dd/MM/yyyy").toFormat("dd/MM/yyyy");
 
-  // const testMoment = moment(startDate, "DD/MM/YYYY").format("YYYY-MM-DD");
-  // console.log("testMoment => ", testMoment);
+  console.log('startDate => ', startDate);
+  console.log('endDate => ', endDate);
 
-  // const nextDate = moment(testMoment).add(1, "days").format("YYYY-MM-DD");
-  // console.log("nextDate => ", nextDate);
+  const addTestDate = DateTime.fromFormat(req.query.startDate, "dd/MM/yyyy").setLocale("pt-BR").plus({ days: 1 }).toFormat("dd/MM/yyyy");
 
-  for (let i = startDate; i <= endDate; i = moment(i).add(1, "days").format("YYYY-MM-DD")) {
-    console.log(`then => ${i}`.yellow);
-    let fDate = moment(i).format("DD/MM/YYYY");
-    console.log('fDate :>> ', fDate);
+  console.log('addTestDate :>> ', addTestDate);
 
-    let args = { codigoSerie: code, data: fDate };
+    let args = { codigoSerie: codeParam, data: dateParam };
     soap
       .createClientAsync(url)
       .then((client) => {
@@ -102,14 +99,50 @@ bacenRoutes.route("/test").get((req, res) => {
           });
         });
       })
-      .then((result) => {
-        console.log(`(${args.data}) : ${result.getValorReturn["$value"]}`.yellow);
-        res.json(parseFloat(result.getValorReturn["$value"]));
-      })
-      .catch(e => { console.log("error:", e) });
+    .then((result) => {
+      console.log(`(${args.data}) : ${result.getValorReturn["$value"]}`.yellow);
+      return res.json(parseFloat(result.getValorReturn["$value"]));
+    })
+    .catch(e => { console.log("error:", e) });
 
-  };
-
-  // return res.json("done. Or not.");
+  // for (
+  //   let i = startDate;
+  //   i <= endDate;
+  //   i = DateTime.fromFormat(i, "dd/MM/yyyy").setLocale("pt-BR").plus({ days: 1 }).toFormat("dd/MM/yyyy")
+  // ) {
+  //   console.log(`then => ${i}`.yellow);
+  // };
 
 });
+
+// bacenRoutes.route("/test").get((req, res) => {
+//   const url = "https://www3.bcb.gov.br/wssgs/services/FachadaWSSGS?wsdl";
+//   const code = parseInt(req.query.code);
+
+//   const startDate = moment(req.query.startDate, "DD/MM/YYYY").format("YYYY-MM-DD");
+//   const endDate = moment(req.query.endDate, "DD/MM/YYYY").format("YYYY-MM-DD");
+
+//   for (let i = startDate; i <= endDate; i = moment(i).add(1, "days").format("YYYY-MM-DD")) {
+//     console.log(`then => ${i}`.yellow);
+//     let fDate = moment(i).format("DD/MM/YYYY");
+//     console.log('fDate :>> ', fDate);
+
+//     let args = { codigoSerie: code, data: fDate };
+//     soap
+//       .createClientAsync(url)
+//       .then((client) => {
+//         return new Promise((resolve, reject) => {
+//           client.getValor(args, (error, result) => {
+//             error ? reject() : resolve(result);
+//           });
+//         });
+//       })
+//       .then((result) => {
+//         console.log(`(${args.data}) : ${result.getValorReturn["$value"]}`.yellow);
+//         res.json(parseFloat(result.getValorReturn["$value"]));
+//       })
+//       .catch(e => { console.log("error:", e) });
+
+//   };
+
+// });
