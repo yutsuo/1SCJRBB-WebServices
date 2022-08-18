@@ -67,7 +67,7 @@ routes.route("/testChart").get((req, res) => {
   res.send("Chart drawn! Look at the console!! LOOK AT IT!!!");
 })
 
-routes.route("/").get((req, res) => {
+routes.route("/bacen").get((req, res) => {
   const code = parseInt(req.query.code);
   const date = req.query.date;
   console.log(`code: ${code}`.red);
