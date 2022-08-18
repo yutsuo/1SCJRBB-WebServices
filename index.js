@@ -7,7 +7,7 @@ import colors from "colors";
 import dotenv from "dotenv";
 import fs from "fs";
 import { DateTime } from "luxon";
-import Plotly from 'plotly.js-dist-min';
+import asciichart from "asciichart";
 
 let rawdata = fs.readFileSync('sgs-bacen.json');
 let sgsBacen = JSON.parse(rawdata);
@@ -27,12 +27,19 @@ app.listen(process.env.NODEJS_PORT, () => {
 });
 
 //* Main Route
-const bacenRoutes = express.Router();
-app.use("/", bacenRoutes);
+const routes = express.Router();
+app.use("/", routes);
 
 
 //* Controllers
-bacenRoutes.route("/").get((req, res) => {
+routes.route("/testChart").get((req, res) => {
+  const s0 = new Array(120);
+  for (let i = 0; i < s0.length; i++) { s0[i] = 15 * Math.sin(i * ((Math.PI * 4) / s0.length)) };
+  console.log(asciichart.plot(s0));
+  res.send("Chart drawn! Look at the console!! LOOK AT IT!!!");
+})
+
+routes.route("/").get((req, res) => {
   const code = parseInt(req.query.code);
   const date = req.query.date;
   console.log(`code: ${code}`.red);
@@ -59,7 +66,7 @@ bacenRoutes.route("/").get((req, res) => {
     });
 });
 
-bacenRoutes.route("/getInfo").get((req, res) => {
+routes.route("/getInfo").get((req, res) => {
   const code = parseInt(req.query.code);
   const filtered = sgsBacen.filter(item => item.code === code)[0];
   console.log(`code => ${code}`.red);
@@ -69,7 +76,7 @@ bacenRoutes.route("/getInfo").get((req, res) => {
 
 });
 
-bacenRoutes.route("/getRanged").get((req, res) => {
+routes.route("/getRanged").get((req, res) => {
   const url = "https://www3.bcb.gov.br/wssgs/services/FachadaWSSGS?wsdl";
   const code = parseInt(req.query.code);
 

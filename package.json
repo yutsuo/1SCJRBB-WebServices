@@ -12,6 +12,7 @@
   "author": "Daniel de Oliveira Carvalho - Yutsuo",
   "license": "ISC",
   "dependencies": {
+    "asciichart": "^1.5.25",
     "colors": "^1.4.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
@@ -19,7 +20,6 @@
     "luxon": "^3.0.1",
     "moment": "^2.29.4",
     "nodemon": "^2.0.19",
-    "plotly.js-dist-min": "^2.14.0",
     "soap": "^0.45.0"
   }
 }
