@@ -33,9 +33,37 @@ app.use("/", routes);
 
 //* Controllers
 routes.route("/testChart").get((req, res) => {
-  const s0 = new Array(120);
-  for (let i = 0; i < s0.length; i++) { s0[i] = 15 * Math.sin(i * ((Math.PI * 4) / s0.length)) };
-  console.log(asciichart.plot(s0));
+  const arr1 = new Array(120)
+  arr1[0] = Math.round(Math.random() * 15)
+  for (let i = 1; i < arr1.length; i++)
+    arr1[i] = arr1[i - 1] + Math.round(Math.random() * (Math.random() > 0.5 ? 2 : -2))
+
+  const arr2 = new Array(120)
+  arr2[0] = Math.round(Math.random() * 15)
+  for (let i = 1; i < arr2.length; i++)
+    arr2[i] = arr2[i - 1] + Math.round(Math.random() * (Math.random() > 0.5 ? 2 : -2))
+
+  const arr3 = new Array(120)
+  arr3[0] = Math.round(Math.random() * 15)
+  for (let i = 1; i < arr3.length; i++)
+    arr3[i] = arr3[i - 1] + Math.round(Math.random() * (Math.random() > 0.5 ? 2 : -2))
+
+  const arr4 = new Array(120)
+  arr4[0] = Math.round(Math.random() * 15)
+  for (let i = 1; i < arr4.length; i++)
+    arr4[i] = arr4[i - 1] + Math.round(Math.random() * (Math.random() > 0.5 ? 2 : -2))
+
+  const config = {
+    colors: [
+      asciichart.blue,
+      asciichart.green,
+      asciichart.magenta, // default color
+      asciichart.red, // equivalent to default
+    ],
+    height: 10
+  }
+
+  console.log(asciichart.plot([arr1, arr2, arr3, arr4], config))
   res.send("Chart drawn! Look at the console!! LOOK AT IT!!!");
 })
 
