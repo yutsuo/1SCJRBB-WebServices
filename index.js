@@ -9,8 +9,8 @@ import fs from "fs";
 import { DateTime } from "luxon";
 import asciichart from "asciichart";
 
-let rawdata = fs.readFileSync('sgs-bacen.json');
-let sgsBacen = JSON.parse(rawdata);
+// const rawdata = fs.readFileSync('sgs-bacen.json');
+// const sgsBacen = JSON.parse(rawdata);
 // console.log("sgsBacen => ", sgsBacen);
 
 //* Modules initialization
@@ -94,32 +94,48 @@ routes.route("/bacen").get((req, res) => {
     });
 });
 
-routes.route("/getInfo").get((req, res) => {
-  const code = parseInt(req.query.code);
-  const filtered = sgsBacen.filter(item => item.code === code)[0];
-  if (filtered) {
-    console.log(`code => ${code}`.red);
-    console.log(`name: ${filtered.short_name}`.yellow);
+const getInfo = (code) => {
+  code = parseInt(code);
+  const rawdata = fs.readFileSync('sgs-bacen.json');
+  const sgsBacen = JSON.parse(rawdata);
 
-    return res.json(sgsBacen.filter(item => item.code === code)[0]);
+  const found = sgsBacen.filter(item => item.code === code)[0];
+  if (found) {
+    // console.log(`code => ${code}`.red);
+    // console.log(`name: ${found.short_name}`.yellow);
+    // console.log('found :>> ', found);
+
+    return found;
   }
-  res.status(500).json(`error: ${code} not found`);
+  const error = `[server] error: ${code} not found`;
+  return error;
+}
 
+routes.route("/getInfo").get((req, res) => {
+  res.json(getInfo(req.query.code));
 
 });
 
 routes.route("/getRanged").get((req, res) => {
   const url = "https://www3.bcb.gov.br/wssgs/services/FachadaWSSGS?wsdl";
   const code = parseInt(req.query.code);
+  const anArray = [];
 
   const startDate = DateTime.fromFormat(req.query.startDate, "dd/MM/yyyy").toFormat("dd/MM/yyyy");
   const endDate = DateTime.fromFormat(req.query.endDate, "dd/MM/yyyy").toFormat("dd/MM/yyyy");
 
-  async function test(url, code, date) {
+  async function getData(url, code, date) {
     const args = { codigoSerie: code, data: date };
     const client = await soap.createClientAsync(url);
-    client.getValor(args, (error, result) => {
-      error ? console.log(error) : console.log(`(${args.data}) : ${result.getValorReturn["$value"]}`.yellow);
+    return client.getValor(args, (error, result) => {
+      // error ? console.log(error) : console.log(`(${args.data}) : ${result.getValorReturn["$value"]}`.yellow);
+      if (!error) {
+        date = args.data;
+        result = result.getValorReturn["$value"];
+        anArray.push({ [date]: result });
+        return { [date]: result }
+      }
+      return error;
     });
   };
 
@@ -128,7 +144,7 @@ routes.route("/getRanged").get((req, res) => {
   for (
     let i = startDate;
     i <= endDate;
-    i = DateTime.fromFormat(i, "dd/MM/yyyy").setLocale("pt-BR").plus({ days: 1 }).toFormat("dd/MM/yyyy")
+    i = DateTime.fromFormat(i, "dd/MM/yyyy").plus({ days: 1 }).toFormat("dd/MM/yyyy")
   ) {
     console.log(`then => ${i}`.yellow);
     dates.push(i);
@@ -136,8 +152,22 @@ routes.route("/getRanged").get((req, res) => {
 
   console.log('dates :>> ', dates);
 
-  Promise.all(
-    dates.map(date => test(url, code, date))
-  ).then(() => { return res.send("done") });
+  Promise.all(dates
+    .map(date => getData(url, code, date)))
+    .then(() => console.log(anArray))
+    .then(() => { return res.send("done") });
 
 });
+
+const promise01 = async () => { setTimeout(() => { return "promise01 done"; }, 1000); };
+const promise02 = async () => { setTimeout(() => { "promise02 done"; }, 1000); };
+const promise03 = async () => { setTimeout(() => { "promise03 done"; }, 1000); };
+const promise04 = async () => { setTimeout(() => { "promise04 done"; }, 1000); };
+
+
+const promiseWaiter = async () => {
+  const message = await promise01();
+  console.log(message);
+};
+
+promiseWaiter();
