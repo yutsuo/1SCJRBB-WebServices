@@ -97,10 +97,14 @@ routes.route("/bacen").get((req, res) => {
 routes.route("/getInfo").get((req, res) => {
   const code = parseInt(req.query.code);
   const filtered = sgsBacen.filter(item => item.code === code)[0];
-  console.log(`code => ${code}`.red);
-  console.log(`name: ${filtered.short_name}`.yellow);
+  if (filtered) {
+    console.log(`code => ${code}`.red);
+    console.log(`name: ${filtered.short_name}`.yellow);
 
-  return res.json(sgsBacen.filter(item => item.code === code)[0]);
+    return res.json(sgsBacen.filter(item => item.code === code)[0]);
+  }
+  res.status(500).json(`error: ${code} not found`);
+
 
 });
 
