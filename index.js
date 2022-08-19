@@ -8,6 +8,7 @@ import dotenv from "dotenv";
 import fs from "fs";
 import { DateTime } from "luxon";
 import asciichart from "asciichart";
+import apiDoc from "./api-doc";
 
 // const rawdata = fs.readFileSync('sgs-bacen.json');
 // const sgsBacen = JSON.parse(rawdata);
