@@ -8,49 +8,18 @@ import dotenv from "dotenv";
 import fs from "fs";
 import { DateTime } from "luxon";
 import asciichart from "asciichart";
-import apiDoc from "./api-doc.js";
 import swaggerUi from 'swagger-ui-express';
-import swaggerJSDoc from "swagger-jsdoc";
+import swaggerFile from './swagger_output.json' assert {type: "json"};
 
 //* Modules initialization
 const app = express();
 
 app.use(cors());
 app.use(bodyParser.json());
+app.use('/doc', swaggerUi.serve, swaggerUi.setup(swaggerFile));
+
 colors.enable();
 dotenv.config();
-
-const options = {
-  definition: {
-    openapi: "3.0.0",
-    info: {
-      title: "SGS BACEN Console Charts API",
-      version: "0.1.0",
-      description:
-        "Build charts from SGS BACEN data",
-      license: {
-        name: "MIT",
-        url: "https://spdx.org/licenses/MIT.html",
-      },
-    },
-    servers: [
-      {
-        url: "http://localhost:3001/",
-      },
-    ],
-  },
-  apis: ["./index.js"],
-};
-
-const swaggerSpec = swaggerJSDoc(options);
-
-// OpenAPI UI
-app.use(
-  '/api-docs',
-  swaggerUi.serve, 
-  swaggerUi.setup(swaggerSpec)
-);
-
 
 app.listen(process.env.NODEJS_PORT, () => {
   console.log(`[server] running on URL: http://localhost:${process.env.NODEJS_PORT}`.cyan);
