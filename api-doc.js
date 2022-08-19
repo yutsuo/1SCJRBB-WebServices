@@ -2,24 +2,24 @@ const apiDoc = {
     swagger: "2.0",
     basePath: "/",
     info: {
-      title: "Todo app API.",
+      title: "SGS Bacen API",
       version: "1.0.0",
     },
     definitions: {
-      Todo: {
+      Metric: {
         type: "object",
         properties: {
-          id: {
+          code: {
             type: "number",
           },
-          message: {
+          date: {
             type: "string",
           },
         },
-        required: ["id", "message"],
+        required: ["code", "date"],
       },
     },
     paths: {},
   };
   
-  module.exports = apiDoc;
+  export default apiDoc;
