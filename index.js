@@ -31,7 +31,7 @@ const routes = express.Router();
 app.use("/", routes);
 
 //* Services
-const getData = async (code, date) => {
+const fetchData = async (code, date) => {
   const url = "https://www3.bcb.gov.br/wssgs/services/FachadaWSSGS?wsdl";
   const args = { codigoSerie: parseInt(code), data: DateTime.fromFormat(date, "dd/MM/yyyy").toFormat("dd/MM/yyyy") };
   const client = await soap.createClientAsync(url);
@@ -40,7 +40,7 @@ const getData = async (code, date) => {
   return result;
 }
 
-const getInfo = (code) => {
+const fetchInfo = (code) => {
   code = parseInt(code);
   const rawdata = fs.readFileSync('sgs-bacen.json');
   const sgsBacen = JSON.parse(rawdata);
@@ -111,12 +111,12 @@ routes.route("/bacen").get((req, res) => {
 
 });
 
-routes.route("/getInfo").get((req, res) => {
-  res.json(getInfo(req.query.code));
+routes.route("/Info").get((req, res) => {
+  res.json(fetchInfo(req.query.code));
 
 });
 
-routes.route("/getRanged").get((req, res) => {
+routes.route("/Ranged").get(async (req, res) => {
   const url = "https://www3.bcb.gov.br/wssgs/services/FachadaWSSGS?wsdl";
 
   const code = parseInt(req.query.code);
@@ -136,15 +136,16 @@ routes.route("/getRanged").get((req, res) => {
 
   console.log('dates :>> ', dates);
 
-  // Promise.all(dates.map(async date => { await getData(code, date); })).then(results => {console.log(results)});
-
-  const getDataLoop = async (dates) => {
+  const fetchDataLoop = async (dates) => {
+    let array = [];
     for (let i = 0; i < dates.length; i++) {
-      console.log(await getData(code, dates[i]));
+      console.log(await fetchData(code, dates[i]));
+      array.push(await fetchData(code, dates[i]));
     }
+    return array;
   }
 
-  getDataLoop(dates);
+  console.log("fetchDataLoop()", await fetchDataLoop(dates));
 
 
   res.json("done");
@@ -152,8 +153,8 @@ routes.route("/getRanged").get((req, res) => {
 });
 
 routes.route("/test").get(async (req, res) => {
-  res.json(await getData(226, "16/08/2020"));
+  res.json(await fetchData(226, "16/08/2020"));
 
 })
 
-let array = [];
+
