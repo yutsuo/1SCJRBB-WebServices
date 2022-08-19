@@ -4,7 +4,7 @@ import bodyParser from "body-parser";
 import cors from "cors";
 import * as soap from "soap";
 import colors from "colors";
-import dotenv from "dotenv";
+import dotenv, { config } from "dotenv";
 import fs from "fs";
 import { DateTime } from "luxon";
 import asciichart from "asciichart";
@@ -30,12 +30,28 @@ const routes = express.Router();
 app.use("/", routes);
 
 //* Services
+const wsdlClient = async () => {
+  const url = "https://www3.bcb.gov.br/wssgs/services/FachadaWSSGS?wsdl";
+  const client = await soap.createClientAsync(url);
+  return client;
+}
+
+const getValorAsync = async (code, date) => {
+  const client = await wsdlClient();
+  const args = { codigoSerie: parseInt(code), data: DateTime.fromFormat(date, "dd/MM/yyyy").toFormat("dd/MM/yyyy") };
+  const result = await client.getValorAsync(args);
+  return result[0].getValorReturn["$value"];
+}
+
+
 const fetchData = async (code, date) => {
   const url = "https://www3.bcb.gov.br/wssgs/services/FachadaWSSGS?wsdl";
   const args = { codigoSerie: parseInt(code), data: DateTime.fromFormat(date, "dd/MM/yyyy").toFormat("dd/MM/yyyy") };
   const client = await soap.createClientAsync(url);
   const results = await client.getValorAsync(args);
+
   const result = { [args.data]: results[0].getValorReturn["$value"] };
+  console.log(result);
   return result;
 }
 
@@ -88,25 +104,29 @@ routes.route("/testChart").get((req, res) => {
     height: 10
   }
 
-  console.log(asciichart.plot([arr1, arr2, arr3, arr4], config))
+  console.log(`\n\n                                          TESTE DE MONTAGEM DE GRÁFICO\n`);
+  console.log(asciichart.plot([arr1, arr2, arr3, arr4], config));
+  console.log(`\n                                  Gráfico de teste para verificação de funcionamento\n`);
   res.send("Chart drawn! Look at the console!! LOOK AT IT!!!");
 });
 
-routes.route("/bacen").get((req, res) => {
+routes.route("/charter").get((req, res) => {
+  const array = [0.458, 0.125, 0.688, 0.741, 0.650, 0.400, 0.368, 0.254];
+  const config = {
+    height: 10
+  }
+  console.log(asciichart.plot([array], config));
+  res.json("done");
+
+})
+
+routes.route("/bacen").get(async (req, res) => {
   const code = parseInt(req.query.code);
   const date = req.query.date;
   console.log(`code: ${code}`.red);
   console.log(`date: ${date}`.red);
 
-  const url = "https://www3.bcb.gov.br/wssgs/services/FachadaWSSGS?wsdl";
-  const args = { codigoSerie: code, data: date };
-
-  soap.createClient(url, {}, function (err, client) {
-    client.getValor(args, function (err, result) {
-      console.log(`CDI (${args.data}) : ${result.getValorReturn["$value"]}`.yellow);
-      res.json(parseFloat(result.getValorReturn["$value"]));
-    });
-  });
+  res.json(await fetchData(code, date));
 
 });
 
@@ -138,13 +158,16 @@ routes.route("/Ranged").get(async (req, res) => {
   const fetchDataLoop = async (dates) => {
     let array = [];
     for (let i = 0; i < dates.length; i++) {
-      console.log(await fetchData(code, dates[i]));
-      array.push(await fetchData(code, dates[i]));
-    }
+      console.log(`dates[${i}] => ${dates[i]}`);
+      setTimeout(() => { }, 1000);
+      let partial = await fetchData(code, dates[i]);
+      console.log("partial => ", partial);
+      array.push(partial);
+    };
     return array;
-  }
+  };
 
-  console.log("fetchDataLoop()", await fetchDataLoop(dates));
+  await fetchDataLoop(dates);
 
 
   res.json("done");
@@ -152,6 +175,6 @@ routes.route("/Ranged").get(async (req, res) => {
 });
 
 routes.route("/test").get(async (req, res) => {
-  res.json(await fetchData(226, "16/08/2020"));
+  res.json(await getValorAsync(226, "01/08/2022"));
 
 })
