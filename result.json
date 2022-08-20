@@ -1,0 +1,1892 @@
+[
+  {
+    "attributes": {
+      "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/"
+    },
+    "getValoresSeriesVOReturn": {
+      "attributes": {
+        "soapenc:arrayType": "ns2:WSSerieVO[1]",
+        "xsi:type": "soapenc:Array"
+      },
+      "getValoresSeriesVOReturn": {
+        "attributes": {
+          "id": "id0",
+          "soapenc:root": "0",
+          "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+          "xsi:type": "ns3:WSSerieVO"
+        },
+        "anoFim": {
+          "attributes": {
+            "id": "id1",
+            "soapenc:root": "0",
+            "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+            "xsi:type": "xsd:int"
+          },
+          "$value": "0"
+        },
+        "anoInicio": {
+          "attributes": {
+            "id": "id2",
+            "soapenc:root": "0",
+            "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+            "xsi:type": "xsd:int"
+          },
+          "$value": "1991"
+        },
+        "aviso": {
+          "attributes": {
+            "xsi:type": "soapenc:string"
+          }
+        },
+        "diaFim": {
+          "attributes": {
+            "id": "id3",
+            "soapenc:root": "0",
+            "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+            "xsi:type": "xsd:int"
+          },
+          "$value": "0"
+        },
+        "diaInicio": {
+          "attributes": {
+            "id": "id4",
+            "soapenc:root": "0",
+            "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+            "xsi:type": "xsd:int"
+          },
+          "$value": "1"
+        },
+        "especial": {
+          "attributes": {
+            "id": "id5",
+            "soapenc:root": "0",
+            "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+            "xsi:type": "xsd:boolean"
+          },
+          "$value": "true"
+        },
+        "fonte": {
+          "attributes": {
+            "xsi:type": "soapenc:string"
+          },
+          "$value": "BCB-Demab"
+        },
+        "fullName": {
+          "attributes": {
+            "xsi:type": "soapenc:string"
+          },
+          "$value": "Referential rate (TR)"
+        },
+        "gestorProprietario": {
+          "attributes": {
+            "xsi:type": "soapenc:string"
+          },
+          "$value": "DEMAB/DIGER/SUSIS"
+        },
+        "mesFim": {
+          "attributes": {
+            "id": "id6",
+            "soapenc:root": "0",
+            "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+            "xsi:type": "xsd:int"
+          },
+          "$value": "0"
+        },
+        "mesInicio": {
+          "attributes": {
+            "id": "id7",
+            "soapenc:root": "0",
+            "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+            "xsi:type": "xsd:int"
+          },
+          "$value": "2"
+        },
+        "nomeAbreviado": {
+          "attributes": {
+            "xsi:type": "soapenc:string"
+          },
+          "$value": "Taxa referencial (TR)"
+        },
+        "nomeCompleto": {
+          "attributes": {
+            "xsi:type": "soapenc:string"
+          },
+          "$value": "Taxa referencial (TR)"
+        },
+        "oid": {
+          "attributes": {
+            "id": "id8",
+            "soapenc:root": "0",
+            "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+            "xsi:type": "xsd:long"
+          },
+          "$value": "226"
+        },
+        "periodicidade": {
+          "attributes": {
+            "xsi:type": "soapenc:string"
+          },
+          "$value": "Diária"
+        },
+        "periodicidadeSigla": {
+          "attributes": {
+            "xsi:type": "soapenc:string"
+          },
+          "$value": "D"
+        },
+        "possuiBloqueios": {
+          "attributes": {
+            "id": "id9",
+            "soapenc:root": "0",
+            "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+            "xsi:type": "xsd:boolean"
+          },
+          "$value": "false"
+        },
+        "publica": {
+          "attributes": {
+            "id": "id10",
+            "soapenc:root": "0",
+            "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+            "xsi:type": "xsd:boolean"
+          },
+          "$value": "true"
+        },
+        "shortName": {
+          "attributes": {
+            "xsi:type": "soapenc:string"
+          },
+          "$value": "Referential rate (TR)"
+        },
+        "unidadePadrao": {
+          "attributes": {
+            "xsi:type": "soapenc:string"
+          },
+          "$value": "% a.m."
+        },
+        "unidadePadraoIngles": {
+          "attributes": {
+            "xsi:type": "soapenc:string"
+          },
+          "$value": "% p.m."
+        },
+        "valorDiaNaoUtil": {
+          "attributes": {
+            "id": "id11",
+            "soapenc:root": "0",
+            "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+            "xsi:type": "xsd:boolean"
+          },
+          "$value": "true"
+        },
+        "valores": {
+          "attributes": {
+            "soapenc:arrayType": "ns3:WSValorSerieVO[15]",
+            "xsi:type": "soapenc:Array"
+          },
+          "valores": [
+            {
+              "attributes": {
+                "id": "id12",
+                "soapenc:root": "0",
+                "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                "xsi:type": "ns10:WSValorSerieVO"
+              },
+              "ano": {
+                "attributes": {
+                  "id": "id93",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "2022"
+              },
+              "anoFim": {
+                "attributes": {
+                  "id": "id94",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "2022"
+              },
+              "bloqueado": {
+                "attributes": {
+                  "id": "id95",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:boolean"
+                },
+                "$value": "false"
+              },
+              "bloqueioLiberado": {
+                "attributes": {
+                  "id": "id96",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:boolean"
+                },
+                "$value": "true"
+              },
+              "dia": {
+                "attributes": {
+                  "id": "id97",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "1"
+              },
+              "diaFim": {
+                "attributes": {
+                  "id": "id98",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "1"
+              },
+              "mes": {
+                "attributes": {
+                  "id": "id99",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "8"
+              },
+              "mesFim": {
+                "attributes": {
+                  "id": "id100",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "9"
+              },
+              "oid": {
+                "attributes": {
+                  "id": "id101",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:long"
+                },
+                "$value": "9148516"
+              },
+              "oidSerie": {
+                "attributes": {
+                  "id": "id102",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:long"
+                },
+                "$value": "226"
+              },
+              "svalor": {
+                "attributes": {
+                  "xsi:type": "soapenc:string"
+                },
+                "$value": "0.2409"
+              },
+              "valor": {
+                "attributes": {
+                  "id": "id103",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "soapenc:decimal"
+                },
+                "$value": "0.2409"
+              }
+            },
+            {
+              "attributes": {
+                "id": "id13",
+                "soapenc:root": "0",
+                "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                "xsi:type": "ns15:WSValorSerieVO"
+              },
+              "ano": {
+                "attributes": {
+                  "id": "id148",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "2022"
+              },
+              "anoFim": {
+                "attributes": {
+                  "id": "id149",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "2022"
+              },
+              "bloqueado": {
+                "attributes": {
+                  "id": "id150",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:boolean"
+                },
+                "$value": "false"
+              },
+              "bloqueioLiberado": {
+                "attributes": {
+                  "id": "id151",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:boolean"
+                },
+                "$value": "true"
+              },
+              "dia": {
+                "attributes": {
+                  "id": "id152",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "2"
+              },
+              "diaFim": {
+                "attributes": {
+                  "id": "id153",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "2"
+              },
+              "mes": {
+                "attributes": {
+                  "id": "id154",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "8"
+              },
+              "mesFim": {
+                "attributes": {
+                  "id": "id155",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "9"
+              },
+              "oid": {
+                "attributes": {
+                  "id": "id156",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:long"
+                },
+                "$value": "9148724"
+              },
+              "oidSerie": {
+                "attributes": {
+                  "id": "id157",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:long"
+                },
+                "$value": "226"
+              },
+              "svalor": {
+                "attributes": {
+                  "xsi:type": "soapenc:string"
+                },
+                "$value": "0.2408"
+              },
+              "valor": {
+                "attributes": {
+                  "id": "id158",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "soapenc:decimal"
+                },
+                "$value": "0.2408"
+              }
+            },
+            {
+              "attributes": {
+                "id": "id14",
+                "soapenc:root": "0",
+                "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                "xsi:type": "ns16:WSValorSerieVO"
+              },
+              "ano": {
+                "attributes": {
+                  "id": "id159",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "2022"
+              },
+              "anoFim": {
+                "attributes": {
+                  "id": "id160",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "2022"
+              },
+              "bloqueado": {
+                "attributes": {
+                  "id": "id161",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:boolean"
+                },
+                "$value": "false"
+              },
+              "bloqueioLiberado": {
+                "attributes": {
+                  "id": "id162",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:boolean"
+                },
+                "$value": "true"
+              },
+              "dia": {
+                "attributes": {
+                  "id": "id163",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "3"
+              },
+              "diaFim": {
+                "attributes": {
+                  "id": "id164",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "3"
+              },
+              "mes": {
+                "attributes": {
+                  "id": "id165",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "8"
+              },
+              "mesFim": {
+                "attributes": {
+                  "id": "id166",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "9"
+              },
+              "oid": {
+                "attributes": {
+                  "id": "id167",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:long"
+                },
+                "$value": "9149113"
+              },
+              "oidSerie": {
+                "attributes": {
+                  "id": "id168",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:long"
+                },
+                "$value": "226"
+              },
+              "svalor": {
+                "attributes": {
+                  "xsi:type": "soapenc:string"
+                },
+                "$value": "0.2420"
+              },
+              "valor": {
+                "attributes": {
+                  "id": "id169",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "soapenc:decimal"
+                },
+                "$value": "0.2420"
+              }
+            },
+            {
+              "attributes": {
+                "id": "id15",
+                "soapenc:root": "0",
+                "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                "xsi:type": "ns6:WSValorSerieVO"
+              },
+              "ano": {
+                "attributes": {
+                  "id": "id49",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "2022"
+              },
+              "anoFim": {
+                "attributes": {
+                  "id": "id50",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "2022"
+              },
+              "bloqueado": {
+                "attributes": {
+                  "id": "id51",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:boolean"
+                },
+                "$value": "false"
+              },
+              "bloqueioLiberado": {
+                "attributes": {
+                  "id": "id52",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:boolean"
+                },
+                "$value": "true"
+              },
+              "dia": {
+                "attributes": {
+                  "id": "id53",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "4"
+              },
+              "diaFim": {
+                "attributes": {
+                  "id": "id54",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "4"
+              },
+              "mes": {
+                "attributes": {
+                  "id": "id55",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "8"
+              },
+              "mesFim": {
+                "attributes": {
+                  "id": "id56",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "9"
+              },
+              "oid": {
+                "attributes": {
+                  "id": "id57",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:long"
+                },
+                "$value": "9149170"
+              },
+              "oidSerie": {
+                "attributes": {
+                  "id": "id58",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:long"
+                },
+                "$value": "226"
+              },
+              "svalor": {
+                "attributes": {
+                  "xsi:type": "soapenc:string"
+                },
+                "$value": "0.2073"
+              },
+              "valor": {
+                "attributes": {
+                  "id": "id59",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "soapenc:decimal"
+                },
+                "$value": "0.2073"
+              }
+            },
+            {
+              "attributes": {
+                "id": "id16",
+                "soapenc:root": "0",
+                "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                "xsi:type": "ns17:WSValorSerieVO"
+              },
+              "ano": {
+                "attributes": {
+                  "id": "id170",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "2022"
+              },
+              "anoFim": {
+                "attributes": {
+                  "id": "id171",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "2022"
+              },
+              "bloqueado": {
+                "attributes": {
+                  "id": "id172",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:boolean"
+                },
+                "$value": "false"
+              },
+              "bloqueioLiberado": {
+                "attributes": {
+                  "id": "id173",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:boolean"
+                },
+                "$value": "true"
+              },
+              "dia": {
+                "attributes": {
+                  "id": "id174",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "5"
+              },
+              "diaFim": {
+                "attributes": {
+                  "id": "id175",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "5"
+              },
+              "mes": {
+                "attributes": {
+                  "id": "id176",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "8"
+              },
+              "mesFim": {
+                "attributes": {
+                  "id": "id177",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "9"
+              },
+              "oid": {
+                "attributes": {
+                  "id": "id178",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:long"
+                },
+                "$value": "9150840"
+              },
+              "oidSerie": {
+                "attributes": {
+                  "id": "id179",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:long"
+                },
+                "$value": "226"
+              },
+              "svalor": {
+                "attributes": {
+                  "xsi:type": "soapenc:string"
+                },
+                "$value": "0.1795"
+              },
+              "valor": {
+                "attributes": {
+                  "id": "id180",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "soapenc:decimal"
+                },
+                "$value": "0.1795"
+              }
+            },
+            {
+              "attributes": {
+                "id": "id17",
+                "soapenc:root": "0",
+                "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                "xsi:type": "ns18:WSValorSerieVO"
+              },
+              "ano": {
+                "attributes": {
+                  "id": "id181",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "2022"
+              },
+              "anoFim": {
+                "attributes": {
+                  "id": "id182",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "2022"
+              },
+              "bloqueado": {
+                "attributes": {
+                  "id": "id183",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:boolean"
+                },
+                "$value": "false"
+              },
+              "bloqueioLiberado": {
+                "attributes": {
+                  "id": "id184",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:boolean"
+                },
+                "$value": "true"
+              },
+              "dia": {
+                "attributes": {
+                  "id": "id185",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "6"
+              },
+              "diaFim": {
+                "attributes": {
+                  "id": "id186",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "6"
+              },
+              "mes": {
+                "attributes": {
+                  "id": "id187",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "8"
+              },
+              "mesFim": {
+                "attributes": {
+                  "id": "id188",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "9"
+              },
+              "oid": {
+                "attributes": {
+                  "id": "id189",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:long"
+                },
+                "$value": "9151075"
+              },
+              "oidSerie": {
+                "attributes": {
+                  "id": "id190",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:long"
+                },
+                "$value": "226"
+              },
+              "svalor": {
+                "attributes": {
+                  "xsi:type": "soapenc:string"
+                },
+                "$value": "0.1801"
+              },
+              "valor": {
+                "attributes": {
+                  "id": "id191",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "soapenc:decimal"
+                },
+                "$value": "0.1801"
+              }
+            },
+            {
+              "attributes": {
+                "id": "id18",
+                "soapenc:root": "0",
+                "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                "xsi:type": "ns13:WSValorSerieVO"
+              },
+              "ano": {
+                "attributes": {
+                  "id": "id126",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "2022"
+              },
+              "anoFim": {
+                "attributes": {
+                  "id": "id127",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "2022"
+              },
+              "bloqueado": {
+                "attributes": {
+                  "id": "id128",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:boolean"
+                },
+                "$value": "false"
+              },
+              "bloqueioLiberado": {
+                "attributes": {
+                  "id": "id129",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:boolean"
+                },
+                "$value": "true"
+              },
+              "dia": {
+                "attributes": {
+                  "id": "id130",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "7"
+              },
+              "diaFim": {
+                "attributes": {
+                  "id": "id131",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "7"
+              },
+              "mes": {
+                "attributes": {
+                  "id": "id132",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "8"
+              },
+              "mesFim": {
+                "attributes": {
+                  "id": "id133",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "9"
+              },
+              "oid": {
+                "attributes": {
+                  "id": "id134",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:long"
+                },
+                "$value": "9151076"
+              },
+              "oidSerie": {
+                "attributes": {
+                  "id": "id135",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:long"
+                },
+                "$value": "226"
+              },
+              "svalor": {
+                "attributes": {
+                  "xsi:type": "soapenc:string"
+                },
+                "$value": "0.2078"
+              },
+              "valor": {
+                "attributes": {
+                  "id": "id136",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "soapenc:decimal"
+                },
+                "$value": "0.2078"
+              }
+            },
+            {
+              "attributes": {
+                "id": "id19",
+                "soapenc:root": "0",
+                "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                "xsi:type": "ns8:WSValorSerieVO"
+              },
+              "ano": {
+                "attributes": {
+                  "id": "id71",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "2022"
+              },
+              "anoFim": {
+                "attributes": {
+                  "id": "id72",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "2022"
+              },
+              "bloqueado": {
+                "attributes": {
+                  "id": "id73",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:boolean"
+                },
+                "$value": "false"
+              },
+              "bloqueioLiberado": {
+                "attributes": {
+                  "id": "id74",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:boolean"
+                },
+                "$value": "true"
+              },
+              "dia": {
+                "attributes": {
+                  "id": "id75",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "8"
+              },
+              "diaFim": {
+                "attributes": {
+                  "id": "id76",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "8"
+              },
+              "mes": {
+                "attributes": {
+                  "id": "id77",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "8"
+              },
+              "mesFim": {
+                "attributes": {
+                  "id": "id78",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "9"
+              },
+              "oid": {
+                "attributes": {
+                  "id": "id79",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:long"
+                },
+                "$value": "9151077"
+              },
+              "oidSerie": {
+                "attributes": {
+                  "id": "id80",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:long"
+                },
+                "$value": "226"
+              },
+              "svalor": {
+                "attributes": {
+                  "xsi:type": "soapenc:string"
+                },
+                "$value": "0.2078"
+              },
+              "valor": {
+                "attributes": {
+                  "id": "id81",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "soapenc:decimal"
+                },
+                "$value": "0.2078"
+              }
+            },
+            {
+              "attributes": {
+                "id": "id20",
+                "soapenc:root": "0",
+                "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                "xsi:type": "ns4:WSValorSerieVO"
+              },
+              "ano": {
+                "attributes": {
+                  "id": "id27",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "2022"
+              },
+              "anoFim": {
+                "attributes": {
+                  "id": "id28",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "2022"
+              },
+              "bloqueado": {
+                "attributes": {
+                  "id": "id29",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:boolean"
+                },
+                "$value": "false"
+              },
+              "bloqueioLiberado": {
+                "attributes": {
+                  "id": "id30",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:boolean"
+                },
+                "$value": "true"
+              },
+              "dia": {
+                "attributes": {
+                  "id": "id31",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "9"
+              },
+              "diaFim": {
+                "attributes": {
+                  "id": "id32",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "9"
+              },
+              "mes": {
+                "attributes": {
+                  "id": "id33",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "8"
+              },
+              "mesFim": {
+                "attributes": {
+                  "id": "id34",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "9"
+              },
+              "oid": {
+                "attributes": {
+                  "id": "id35",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:long"
+                },
+                "$value": "9151527"
+              },
+              "oidSerie": {
+                "attributes": {
+                  "id": "id36",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:long"
+                },
+                "$value": "226"
+              },
+              "svalor": {
+                "attributes": {
+                  "xsi:type": "soapenc:string"
+                },
+                "$value": "0.2065"
+              },
+              "valor": {
+                "attributes": {
+                  "id": "id37",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "soapenc:decimal"
+                },
+                "$value": "0.2065"
+              }
+            },
+            {
+              "attributes": {
+                "id": "id21",
+                "soapenc:root": "0",
+                "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                "xsi:type": "ns9:WSValorSerieVO"
+              },
+              "ano": {
+                "attributes": {
+                  "id": "id82",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "2022"
+              },
+              "anoFim": {
+                "attributes": {
+                  "id": "id83",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "2022"
+              },
+              "bloqueado": {
+                "attributes": {
+                  "id": "id84",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:boolean"
+                },
+                "$value": "false"
+              },
+              "bloqueioLiberado": {
+                "attributes": {
+                  "id": "id85",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:boolean"
+                },
+                "$value": "true"
+              },
+              "dia": {
+                "attributes": {
+                  "id": "id86",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "10"
+              },
+              "diaFim": {
+                "attributes": {
+                  "id": "id87",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "10"
+              },
+              "mes": {
+                "attributes": {
+                  "id": "id88",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "8"
+              },
+              "mesFim": {
+                "attributes": {
+                  "id": "id89",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "9"
+              },
+              "oid": {
+                "attributes": {
+                  "id": "id90",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:long"
+                },
+                "$value": "9152304"
+              },
+              "oidSerie": {
+                "attributes": {
+                  "id": "id91",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:long"
+                },
+                "$value": "226"
+              },
+              "svalor": {
+                "attributes": {
+                  "xsi:type": "soapenc:string"
+                },
+                "$value": "0.2065"
+              },
+              "valor": {
+                "attributes": {
+                  "id": "id92",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "soapenc:decimal"
+                },
+                "$value": "0.2065"
+              }
+            },
+            {
+              "attributes": {
+                "id": "id22",
+                "soapenc:root": "0",
+                "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                "xsi:type": "ns12:WSValorSerieVO"
+              },
+              "ano": {
+                "attributes": {
+                  "id": "id115",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "2022"
+              },
+              "anoFim": {
+                "attributes": {
+                  "id": "id116",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "2022"
+              },
+              "bloqueado": {
+                "attributes": {
+                  "id": "id117",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:boolean"
+                },
+                "$value": "false"
+              },
+              "bloqueioLiberado": {
+                "attributes": {
+                  "id": "id118",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:boolean"
+                },
+                "$value": "true"
+              },
+              "dia": {
+                "attributes": {
+                  "id": "id119",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "11"
+              },
+              "diaFim": {
+                "attributes": {
+                  "id": "id120",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "11"
+              },
+              "mes": {
+                "attributes": {
+                  "id": "id121",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "8"
+              },
+              "mesFim": {
+                "attributes": {
+                  "id": "id122",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "9"
+              },
+              "oid": {
+                "attributes": {
+                  "id": "id123",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:long"
+                },
+                "$value": "9152399"
+              },
+              "oidSerie": {
+                "attributes": {
+                  "id": "id124",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:long"
+                },
+                "$value": "226"
+              },
+              "svalor": {
+                "attributes": {
+                  "xsi:type": "soapenc:string"
+                },
+                "$value": "0.1789"
+              },
+              "valor": {
+                "attributes": {
+                  "id": "id125",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "soapenc:decimal"
+                },
+                "$value": "0.1789"
+              }
+            },
+            {
+              "attributes": {
+                "id": "id23",
+                "soapenc:root": "0",
+                "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                "xsi:type": "ns5:WSValorSerieVO"
+              },
+              "ano": {
+                "attributes": {
+                  "id": "id38",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "2022"
+              },
+              "anoFim": {
+                "attributes": {
+                  "id": "id39",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "2022"
+              },
+              "bloqueado": {
+                "attributes": {
+                  "id": "id40",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:boolean"
+                },
+                "$value": "false"
+              },
+              "bloqueioLiberado": {
+                "attributes": {
+                  "id": "id41",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:boolean"
+                },
+                "$value": "true"
+              },
+              "dia": {
+                "attributes": {
+                  "id": "id42",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "12"
+              },
+              "diaFim": {
+                "attributes": {
+                  "id": "id43",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "12"
+              },
+              "mes": {
+                "attributes": {
+                  "id": "id44",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "8"
+              },
+              "mesFim": {
+                "attributes": {
+                  "id": "id45",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "9"
+              },
+              "oid": {
+                "attributes": {
+                  "id": "id46",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:long"
+                },
+                "$value": "9152732"
+              },
+              "oidSerie": {
+                "attributes": {
+                  "id": "id47",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:long"
+                },
+                "$value": "226"
+              },
+              "svalor": {
+                "attributes": {
+                  "xsi:type": "soapenc:string"
+                },
+                "$value": "0.1513"
+              },
+              "valor": {
+                "attributes": {
+                  "id": "id48",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "soapenc:decimal"
+                },
+                "$value": "0.1513"
+              }
+            },
+            {
+              "attributes": {
+                "id": "id24",
+                "soapenc:root": "0",
+                "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                "xsi:type": "ns11:WSValorSerieVO"
+              },
+              "ano": {
+                "attributes": {
+                  "id": "id104",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "2022"
+              },
+              "anoFim": {
+                "attributes": {
+                  "id": "id105",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "2022"
+              },
+              "bloqueado": {
+                "attributes": {
+                  "id": "id106",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:boolean"
+                },
+                "$value": "false"
+              },
+              "bloqueioLiberado": {
+                "attributes": {
+                  "id": "id107",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:boolean"
+                },
+                "$value": "true"
+              },
+              "dia": {
+                "attributes": {
+                  "id": "id108",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "13"
+              },
+              "diaFim": {
+                "attributes": {
+                  "id": "id109",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "13"
+              },
+              "mes": {
+                "attributes": {
+                  "id": "id110",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "8"
+              },
+              "mesFim": {
+                "attributes": {
+                  "id": "id111",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "9"
+              },
+              "oid": {
+                "attributes": {
+                  "id": "id112",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:long"
+                },
+                "$value": "9153201"
+              },
+              "oidSerie": {
+                "attributes": {
+                  "id": "id113",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:long"
+                },
+                "$value": "226"
+              },
+              "svalor": {
+                "attributes": {
+                  "xsi:type": "soapenc:string"
+                },
+                "$value": "0.1518"
+              },
+              "valor": {
+                "attributes": {
+                  "id": "id114",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "soapenc:decimal"
+                },
+                "$value": "0.1518"
+              }
+            },
+            {
+              "attributes": {
+                "id": "id25",
+                "soapenc:root": "0",
+                "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                "xsi:type": "ns14:WSValorSerieVO"
+              },
+              "ano": {
+                "attributes": {
+                  "id": "id137",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "2022"
+              },
+              "anoFim": {
+                "attributes": {
+                  "id": "id138",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "2022"
+              },
+              "bloqueado": {
+                "attributes": {
+                  "id": "id139",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:boolean"
+                },
+                "$value": "false"
+              },
+              "bloqueioLiberado": {
+                "attributes": {
+                  "id": "id140",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:boolean"
+                },
+                "$value": "true"
+              },
+              "dia": {
+                "attributes": {
+                  "id": "id141",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "14"
+              },
+              "diaFim": {
+                "attributes": {
+                  "id": "id142",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "14"
+              },
+              "mes": {
+                "attributes": {
+                  "id": "id143",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "8"
+              },
+              "mesFim": {
+                "attributes": {
+                  "id": "id144",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "9"
+              },
+              "oid": {
+                "attributes": {
+                  "id": "id145",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:long"
+                },
+                "$value": "9153202"
+              },
+              "oidSerie": {
+                "attributes": {
+                  "id": "id146",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:long"
+                },
+                "$value": "226"
+              },
+              "svalor": {
+                "attributes": {
+                  "xsi:type": "soapenc:string"
+                },
+                "$value": "0.1794"
+              },
+              "valor": {
+                "attributes": {
+                  "id": "id147",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "soapenc:decimal"
+                },
+                "$value": "0.1794"
+              }
+            },
+            {
+              "attributes": {
+                "id": "id26",
+                "soapenc:root": "0",
+                "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                "xsi:type": "ns7:WSValorSerieVO"
+              },
+              "ano": {
+                "attributes": {
+                  "id": "id60",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "2022"
+              },
+              "anoFim": {
+                "attributes": {
+                  "id": "id61",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "2022"
+              },
+              "bloqueado": {
+                "attributes": {
+                  "id": "id62",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:boolean"
+                },
+                "$value": "false"
+              },
+              "bloqueioLiberado": {
+                "attributes": {
+                  "id": "id63",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:boolean"
+                },
+                "$value": "true"
+              },
+              "dia": {
+                "attributes": {
+                  "id": "id64",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "15"
+              },
+              "diaFim": {
+                "attributes": {
+                  "id": "id65",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "15"
+              },
+              "mes": {
+                "attributes": {
+                  "id": "id66",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "8"
+              },
+              "mesFim": {
+                "attributes": {
+                  "id": "id67",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:int"
+                },
+                "$value": "9"
+              },
+              "oid": {
+                "attributes": {
+                  "id": "id68",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:long"
+                },
+                "$value": "9153203"
+              },
+              "oidSerie": {
+                "attributes": {
+                  "id": "id69",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "xsd:long"
+                },
+                "$value": "226"
+              },
+              "svalor": {
+                "attributes": {
+                  "xsi:type": "soapenc:string"
+                },
+                "$value": "0.2072"
+              },
+              "valor": {
+                "attributes": {
+                  "id": "id70",
+                  "soapenc:root": "0",
+                  "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/",
+                  "xsi:type": "soapenc:decimal"
+                },
+                "$value": "0.2072"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "<?xml version=\"1.0\" encoding=\"utf-8\"?><soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><soapenv:Body><ns1:getValoresSeriesVOResponse soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xmlns:ns1=\"https://www3.bcb.gov.br/wssgs/services/FachadaWSSGS\"><getValoresSeriesVOReturn soapenc:arrayType=\"ns2:WSSerieVO[1]\" xsi:type=\"soapenc:Array\" xmlns:ns2=\"http://comum.ws.casosdeuso.sgs.pec.bcb.gov.br\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\"><getValoresSeriesVOReturn href=\"#id0\"/></getValoresSeriesVOReturn></ns1:getValoresSeriesVOResponse><multiRef id=\"id0\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"ns3:WSSerieVO\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\" xmlns:ns3=\"http://comum.ws.casosdeuso.sgs.pec.bcb.gov.br\"><anoFim href=\"#id1\"/><anoInicio href=\"#id2\"/><aviso xsi:type=\"soapenc:string\"></aviso><diaFim href=\"#id3\"/><diaInicio href=\"#id4\"/><especial href=\"#id5\"/><fonte xsi:type=\"soapenc:string\">BCB-Demab</fonte><fullName xsi:type=\"soapenc:string\">Referential rate (TR)</fullName><gestorProprietario xsi:type=\"soapenc:string\">DEMAB/DIGER/SUSIS</gestorProprietario><mesFim href=\"#id6\"/><mesInicio href=\"#id7\"/><nomeAbreviado xsi:type=\"soapenc:string\">Taxa referencial (TR)</nomeAbreviado><nomeCompleto xsi:type=\"soapenc:string\">Taxa referencial (TR)</nomeCompleto><oid href=\"#id8\"/><periodicidade xsi:type=\"soapenc:string\">Di&#xE1;ria</periodicidade><periodicidadeSigla xsi:type=\"soapenc:string\">D</periodicidadeSigla><possuiBloqueios href=\"#id9\"/><publica href=\"#id10\"/><shortName xsi:type=\"soapenc:string\">Referential rate (TR)</shortName><ultimoValor xsi:type=\"ns3:WSValorSerieVO\" xsi:nil=\"true\"/><unidadePadrao xsi:type=\"soapenc:string\">% a.m.</unidadePadrao><unidadePadraoIngles xsi:type=\"soapenc:string\">% p.m.</unidadePadraoIngles><valorDiaNaoUtil href=\"#id11\"/><valores soapenc:arrayType=\"ns3:WSValorSerieVO[15]\" xsi:type=\"soapenc:Array\"><valores href=\"#id12\"/><valores href=\"#id13\"/><valores href=\"#id14\"/><valores href=\"#id15\"/><valores href=\"#id16\"/><valores href=\"#id17\"/><valores href=\"#id18\"/><valores href=\"#id19\"/><valores href=\"#id20\"/><valores href=\"#id21\"/><valores href=\"#id22\"/><valores href=\"#id23\"/><valores href=\"#id24\"/><valores href=\"#id25\"/><valores href=\"#id26\"/></valores></multiRef><multiRef id=\"id8\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:long\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">226</multiRef><multiRef id=\"id20\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"ns4:WSValorSerieVO\" xmlns:ns4=\"http://comum.ws.casosdeuso.sgs.pec.bcb.gov.br\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\"><ano href=\"#id27\"/><anoFim href=\"#id28\"/><bloqueado href=\"#id29\"/><bloqueioLiberado href=\"#id30\"/><dia href=\"#id31\"/><diaFim href=\"#id32\"/><mes href=\"#id33\"/><mesFim href=\"#id34\"/><oid href=\"#id35\"/><oidSerie href=\"#id36\"/><svalor xsi:type=\"soapenc:string\">0.2065</svalor><valor href=\"#id37\"/></multiRef><multiRef id=\"id10\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:boolean\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">true</multiRef><multiRef id=\"id23\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"ns5:WSValorSerieVO\" xmlns:ns5=\"http://comum.ws.casosdeuso.sgs.pec.bcb.gov.br\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\"><ano href=\"#id38\"/><anoFim href=\"#id39\"/><bloqueado href=\"#id40\"/><bloqueioLiberado href=\"#id41\"/><dia href=\"#id42\"/><diaFim href=\"#id43\"/><mes href=\"#id44\"/><mesFim href=\"#id45\"/><oid href=\"#id46\"/><oidSerie href=\"#id47\"/><svalor xsi:type=\"soapenc:string\">0.1513</svalor><valor href=\"#id48\"/></multiRef><multiRef id=\"id15\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"ns6:WSValorSerieVO\" xmlns:ns6=\"http://comum.ws.casosdeuso.sgs.pec.bcb.gov.br\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\"><ano href=\"#id49\"/><anoFim href=\"#id50\"/><bloqueado href=\"#id51\"/><bloqueioLiberado href=\"#id52\"/><dia href=\"#id53\"/><diaFim href=\"#id54\"/><mes href=\"#id55\"/><mesFim href=\"#id56\"/><oid href=\"#id57\"/><oidSerie href=\"#id58\"/><svalor xsi:type=\"soapenc:string\">0.2073</svalor><valor href=\"#id59\"/></multiRef><multiRef id=\"id26\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"ns7:WSValorSerieVO\" xmlns:ns7=\"http://comum.ws.casosdeuso.sgs.pec.bcb.gov.br\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\"><ano href=\"#id60\"/><anoFim href=\"#id61\"/><bloqueado href=\"#id62\"/><bloqueioLiberado href=\"#id63\"/><dia href=\"#id64\"/><diaFim href=\"#id65\"/><mes href=\"#id66\"/><mesFim href=\"#id67\"/><oid href=\"#id68\"/><oidSerie href=\"#id69\"/><svalor xsi:type=\"soapenc:string\">0.2072</svalor><valor href=\"#id70\"/></multiRef><multiRef id=\"id4\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">1</multiRef><multiRef id=\"id2\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">1991</multiRef><multiRef id=\"id19\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"ns8:WSValorSerieVO\" xmlns:ns8=\"http://comum.ws.casosdeuso.sgs.pec.bcb.gov.br\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\"><ano href=\"#id71\"/><anoFim href=\"#id72\"/><bloqueado href=\"#id73\"/><bloqueioLiberado href=\"#id74\"/><dia href=\"#id75\"/><diaFim href=\"#id76\"/><mes href=\"#id77\"/><mesFim href=\"#id78\"/><oid href=\"#id79\"/><oidSerie href=\"#id80\"/><svalor xsi:type=\"soapenc:string\">0.2078</svalor><valor href=\"#id81\"/></multiRef><multiRef id=\"id21\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"ns9:WSValorSerieVO\" xmlns:ns9=\"http://comum.ws.casosdeuso.sgs.pec.bcb.gov.br\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\"><ano href=\"#id82\"/><anoFim href=\"#id83\"/><bloqueado href=\"#id84\"/><bloqueioLiberado href=\"#id85\"/><dia href=\"#id86\"/><diaFim href=\"#id87\"/><mes href=\"#id88\"/><mesFim href=\"#id89\"/><oid href=\"#id90\"/><oidSerie href=\"#id91\"/><svalor xsi:type=\"soapenc:string\">0.2065</svalor><valor href=\"#id92\"/></multiRef><multiRef id=\"id11\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:boolean\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">true</multiRef><multiRef id=\"id3\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">0</multiRef><multiRef id=\"id12\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"ns10:WSValorSerieVO\" xmlns:ns10=\"http://comum.ws.casosdeuso.sgs.pec.bcb.gov.br\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\"><ano href=\"#id93\"/><anoFim href=\"#id94\"/><bloqueado href=\"#id95\"/><bloqueioLiberado href=\"#id96\"/><dia href=\"#id97\"/><diaFim href=\"#id98\"/><mes href=\"#id99\"/><mesFim href=\"#id100\"/><oid href=\"#id101\"/><oidSerie href=\"#id102\"/><svalor xsi:type=\"soapenc:string\">0.2409</svalor><valor href=\"#id103\"/></multiRef><multiRef id=\"id9\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:boolean\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">false</multiRef><multiRef id=\"id24\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"ns11:WSValorSerieVO\" xmlns:ns11=\"http://comum.ws.casosdeuso.sgs.pec.bcb.gov.br\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\"><ano href=\"#id104\"/><anoFim href=\"#id105\"/><bloqueado href=\"#id106\"/><bloqueioLiberado href=\"#id107\"/><dia href=\"#id108\"/><diaFim href=\"#id109\"/><mes href=\"#id110\"/><mesFim href=\"#id111\"/><oid href=\"#id112\"/><oidSerie href=\"#id113\"/><svalor xsi:type=\"soapenc:string\">0.1518</svalor><valor href=\"#id114\"/></multiRef><multiRef id=\"id7\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">2</multiRef><multiRef id=\"id1\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">0</multiRef><multiRef id=\"id22\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"ns12:WSValorSerieVO\" xmlns:ns12=\"http://comum.ws.casosdeuso.sgs.pec.bcb.gov.br\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\"><ano href=\"#id115\"/><anoFim href=\"#id116\"/><bloqueado href=\"#id117\"/><bloqueioLiberado href=\"#id118\"/><dia href=\"#id119\"/><diaFim href=\"#id120\"/><mes href=\"#id121\"/><mesFim href=\"#id122\"/><oid href=\"#id123\"/><oidSerie href=\"#id124\"/><svalor xsi:type=\"soapenc:string\">0.1789</svalor><valor href=\"#id125\"/></multiRef><multiRef id=\"id18\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"ns13:WSValorSerieVO\" xmlns:ns13=\"http://comum.ws.casosdeuso.sgs.pec.bcb.gov.br\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\"><ano href=\"#id126\"/><anoFim href=\"#id127\"/><bloqueado href=\"#id128\"/><bloqueioLiberado href=\"#id129\"/><dia href=\"#id130\"/><diaFim href=\"#id131\"/><mes href=\"#id132\"/><mesFim href=\"#id133\"/><oid href=\"#id134\"/><oidSerie href=\"#id135\"/><svalor xsi:type=\"soapenc:string\">0.2078</svalor><valor href=\"#id136\"/></multiRef><multiRef id=\"id25\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"ns14:WSValorSerieVO\" xmlns:ns14=\"http://comum.ws.casosdeuso.sgs.pec.bcb.gov.br\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\"><ano href=\"#id137\"/><anoFim href=\"#id138\"/><bloqueado href=\"#id139\"/><bloqueioLiberado href=\"#id140\"/><dia href=\"#id141\"/><diaFim href=\"#id142\"/><mes href=\"#id143\"/><mesFim href=\"#id144\"/><oid href=\"#id145\"/><oidSerie href=\"#id146\"/><svalor xsi:type=\"soapenc:string\">0.1794</svalor><valor href=\"#id147\"/></multiRef><multiRef id=\"id6\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">0</multiRef><multiRef id=\"id13\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"ns15:WSValorSerieVO\" xmlns:ns15=\"http://comum.ws.casosdeuso.sgs.pec.bcb.gov.br\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\"><ano href=\"#id148\"/><anoFim href=\"#id149\"/><bloqueado href=\"#id150\"/><bloqueioLiberado href=\"#id151\"/><dia href=\"#id152\"/><diaFim href=\"#id153\"/><mes href=\"#id154\"/><mesFim href=\"#id155\"/><oid href=\"#id156\"/><oidSerie href=\"#id157\"/><svalor xsi:type=\"soapenc:string\">0.2408</svalor><valor href=\"#id158\"/></multiRef><multiRef id=\"id14\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"ns16:WSValorSerieVO\" xmlns:ns16=\"http://comum.ws.casosdeuso.sgs.pec.bcb.gov.br\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\"><ano href=\"#id159\"/><anoFim href=\"#id160\"/><bloqueado href=\"#id161\"/><bloqueioLiberado href=\"#id162\"/><dia href=\"#id163\"/><diaFim href=\"#id164\"/><mes href=\"#id165\"/><mesFim href=\"#id166\"/><oid href=\"#id167\"/><oidSerie href=\"#id168\"/><svalor xsi:type=\"soapenc:string\">0.2420</svalor><valor href=\"#id169\"/></multiRef><multiRef id=\"id16\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"ns17:WSValorSerieVO\" xmlns:ns17=\"http://comum.ws.casosdeuso.sgs.pec.bcb.gov.br\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\"><ano href=\"#id170\"/><anoFim href=\"#id171\"/><bloqueado href=\"#id172\"/><bloqueioLiberado href=\"#id173\"/><dia href=\"#id174\"/><diaFim href=\"#id175\"/><mes href=\"#id176\"/><mesFim href=\"#id177\"/><oid href=\"#id178\"/><oidSerie href=\"#id179\"/><svalor xsi:type=\"soapenc:string\">0.1795</svalor><valor href=\"#id180\"/></multiRef><multiRef id=\"id17\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"ns18:WSValorSerieVO\" xmlns:ns18=\"http://comum.ws.casosdeuso.sgs.pec.bcb.gov.br\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\"><ano href=\"#id181\"/><anoFim href=\"#id182\"/><bloqueado href=\"#id183\"/><bloqueioLiberado href=\"#id184\"/><dia href=\"#id185\"/><diaFim href=\"#id186\"/><mes href=\"#id187\"/><mesFim href=\"#id188\"/><oid href=\"#id189\"/><oidSerie href=\"#id190\"/><svalor xsi:type=\"soapenc:string\">0.1801</svalor><valor href=\"#id191\"/></multiRef><multiRef id=\"id5\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:boolean\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">true</multiRef><multiRef id=\"id182\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">2022</multiRef><multiRef id=\"id157\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:long\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">226</multiRef><multiRef id=\"id114\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"soapenc:decimal\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">0.1518</multiRef><multiRef id=\"id184\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:boolean\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">true</multiRef><multiRef id=\"id137\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">2022</multiRef><multiRef id=\"id135\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:long\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">226</multiRef><multiRef id=\"id81\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"soapenc:decimal\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">0.2078</multiRef><multiRef id=\"id105\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">2022</multiRef><multiRef id=\"id107\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:boolean\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">true</multiRef><multiRef id=\"id116\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">2022</multiRef><multiRef id=\"id68\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:long\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">9153203</multiRef><multiRef id=\"id64\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">15</multiRef><multiRef id=\"id186\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">6</multiRef><multiRef id=\"id103\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"soapenc:decimal\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">0.2409</multiRef><multiRef id=\"id180\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"soapenc:decimal\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">0.1795</multiRef><multiRef id=\"id59\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"soapenc:decimal\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">0.2073</multiRef><multiRef id=\"id28\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">2022</multiRef><multiRef id=\"id66\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">8</multiRef><multiRef id=\"id88\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">8</multiRef><multiRef id=\"id110\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">8</multiRef><multiRef id=\"id120\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">11</multiRef><multiRef id=\"id74\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:boolean\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">true</multiRef><multiRef id=\"id140\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:boolean\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">true</multiRef><multiRef id=\"id32\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">9</multiRef><multiRef id=\"id119\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">11</multiRef><multiRef id=\"id151\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:boolean\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">true</multiRef><multiRef id=\"id90\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:long\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">9152304</multiRef><multiRef id=\"id142\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">14</multiRef><multiRef id=\"id71\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">2022</multiRef><multiRef id=\"id84\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:boolean\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">false</multiRef><multiRef id=\"id173\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:boolean\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">true</multiRef><multiRef id=\"id156\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:long\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">9148724</multiRef><multiRef id=\"id166\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">9</multiRef><multiRef id=\"id179\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:long\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">226</multiRef><multiRef id=\"id152\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">2</multiRef><multiRef id=\"id150\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:boolean\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">false</multiRef><multiRef id=\"id139\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:boolean\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">false</multiRef><multiRef id=\"id168\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:long\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">226</multiRef><multiRef id=\"id56\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">9</multiRef><multiRef id=\"id178\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:long\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">9150840</multiRef><multiRef id=\"id159\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">2022</multiRef><multiRef id=\"id92\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"soapenc:decimal\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">0.2065</multiRef><multiRef id=\"id126\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">2022</multiRef><multiRef id=\"id62\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:boolean\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">false</multiRef><multiRef id=\"id149\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">2022</multiRef><multiRef id=\"id46\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:long\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">9152732</multiRef><multiRef id=\"id171\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">2022</multiRef><multiRef id=\"id153\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">2</multiRef><multiRef id=\"id85\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:boolean\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">true</multiRef><multiRef id=\"id101\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:long\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">9148516</multiRef><multiRef id=\"id30\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:boolean\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">true</multiRef><multiRef id=\"id160\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">2022</multiRef><multiRef id=\"id148\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">2022</multiRef><multiRef id=\"id76\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">8</multiRef><multiRef id=\"id87\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">10</multiRef><multiRef id=\"id75\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">8</multiRef><multiRef id=\"id106\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:boolean\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">false</multiRef><multiRef id=\"id158\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"soapenc:decimal\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">0.2408</multiRef><multiRef id=\"id141\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">14</multiRef><multiRef id=\"id99\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">8</multiRef><multiRef id=\"id53\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">4</multiRef><multiRef id=\"id163\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">3</multiRef><multiRef id=\"id41\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:boolean\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">true</multiRef><multiRef id=\"id121\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">8</multiRef><multiRef id=\"id122\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">9</multiRef><multiRef id=\"id31\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">9</multiRef><multiRef id=\"id109\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">13</multiRef><multiRef id=\"id98\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">1</multiRef><multiRef id=\"id47\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:long\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">226</multiRef><multiRef id=\"id52\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:boolean\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">true</multiRef><multiRef id=\"id72\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">2022</multiRef><multiRef id=\"id104\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">2022</multiRef><multiRef id=\"id170\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">2022</multiRef><multiRef id=\"id138\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">2022</multiRef><multiRef id=\"id123\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:long\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">9152399</multiRef><multiRef id=\"id185\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">6</multiRef><multiRef id=\"id108\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">13</multiRef><multiRef id=\"id181\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">2022</multiRef><multiRef id=\"id131\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">7</multiRef><multiRef id=\"id79\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:long\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">9151077</multiRef><multiRef id=\"id129\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:boolean\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">true</multiRef><multiRef id=\"id97\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">1</multiRef><multiRef id=\"id124\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:long\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">226</multiRef><multiRef id=\"id35\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:long\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">9151527</multiRef><multiRef id=\"id58\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:long\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">226</multiRef><multiRef id=\"id50\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">2022</multiRef><multiRef id=\"id36\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:long\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">226</multiRef><multiRef id=\"id188\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">9</multiRef><multiRef id=\"id187\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">8</multiRef><multiRef id=\"id70\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"soapenc:decimal\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">0.2072</multiRef><multiRef id=\"id96\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:boolean\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">true</multiRef><multiRef id=\"id60\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">2022</multiRef><multiRef id=\"id54\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">4</multiRef><multiRef id=\"id144\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">9</multiRef><multiRef id=\"id91\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:long\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">226</multiRef><multiRef id=\"id94\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">2022</multiRef><multiRef id=\"id177\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">9</multiRef><multiRef id=\"id80\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:long\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">226</multiRef><multiRef id=\"id115\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">2022</multiRef><multiRef id=\"id73\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:boolean\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">false</multiRef><multiRef id=\"id175\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">5</multiRef><multiRef id=\"id113\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:long\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">226</multiRef><multiRef id=\"id112\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:long\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">9153201</multiRef><multiRef id=\"id37\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"soapenc:decimal\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">0.2065</multiRef><multiRef id=\"id169\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"soapenc:decimal\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">0.2420</multiRef><multiRef id=\"id134\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:long\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">9151076</multiRef><multiRef id=\"id146\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:long\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">226</multiRef><multiRef id=\"id127\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">2022</multiRef><multiRef id=\"id86\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">10</multiRef><multiRef id=\"id44\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">8</multiRef><multiRef id=\"id172\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:boolean\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">false</multiRef><multiRef id=\"id143\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">8</multiRef><multiRef id=\"id128\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:boolean\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">false</multiRef><multiRef id=\"id117\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:boolean\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">false</multiRef><multiRef id=\"id51\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:boolean\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">false</multiRef><multiRef id=\"id183\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:boolean\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">false</multiRef><multiRef id=\"id34\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">9</multiRef><multiRef id=\"id190\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:long\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">226</multiRef><multiRef id=\"id165\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">8</multiRef><multiRef id=\"id164\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">3</multiRef><multiRef id=\"id125\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"soapenc:decimal\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">0.1789</multiRef><multiRef id=\"id48\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"soapenc:decimal\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">0.1513</multiRef><multiRef id=\"id132\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">8</multiRef><multiRef id=\"id161\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:boolean\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">false</multiRef><multiRef id=\"id154\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">8</multiRef><multiRef id=\"id167\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:long\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">9149113</multiRef><multiRef id=\"id162\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:boolean\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">true</multiRef><multiRef id=\"id93\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">2022</multiRef><multiRef id=\"id130\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">7</multiRef><multiRef id=\"id65\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">15</multiRef><multiRef id=\"id67\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">9</multiRef><multiRef id=\"id191\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"soapenc:decimal\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">0.1801</multiRef><multiRef id=\"id136\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"soapenc:decimal\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">0.2078</multiRef><multiRef id=\"id43\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">12</multiRef><multiRef id=\"id174\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">5</multiRef><multiRef id=\"id27\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">2022</multiRef><multiRef id=\"id176\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">8</multiRef><multiRef id=\"id78\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">9</multiRef><multiRef id=\"id29\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:boolean\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">false</multiRef><multiRef id=\"id63\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:boolean\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">true</multiRef><multiRef id=\"id77\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">8</multiRef><multiRef id=\"id133\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">9</multiRef><multiRef id=\"id61\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">2022</multiRef><multiRef id=\"id147\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"soapenc:decimal\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">0.1794</multiRef><multiRef id=\"id45\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">9</multiRef><multiRef id=\"id57\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:long\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">9149170</multiRef><multiRef id=\"id89\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">9</multiRef><multiRef id=\"id33\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">8</multiRef><multiRef id=\"id49\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">2022</multiRef><multiRef id=\"id145\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:long\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">9153202</multiRef><multiRef id=\"id55\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">8</multiRef><multiRef id=\"id111\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">9</multiRef><multiRef id=\"id189\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:long\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">9151075</multiRef><multiRef id=\"id39\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">2022</multiRef><multiRef id=\"id83\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">2022</multiRef><multiRef id=\"id69\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:long\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">226</multiRef><multiRef id=\"id38\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">2022</multiRef><multiRef id=\"id100\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">9</multiRef><multiRef id=\"id118\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:boolean\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">true</multiRef><multiRef id=\"id155\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">9</multiRef><multiRef id=\"id102\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:long\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">226</multiRef><multiRef id=\"id40\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:boolean\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">false</multiRef><multiRef id=\"id42\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">12</multiRef><multiRef id=\"id82\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:int\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">2022</multiRef><multiRef id=\"id95\" soapenc:root=\"0\" soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xsi:type=\"xsd:boolean\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">false</multiRef></soapenv:Body></soapenv:Envelope>",
+  null,
+  "<?xml version=\"1.0\" encoding=\"utf-8\"?><soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"  xmlns:impl=\"https://www3.bcb.gov.br/wssgs/services/FachadaWSSGS\" xmlns:intf=\"https://www3.bcb.gov.br/wssgs/services/FachadaWSSGS\" xmlns:tns1=\"http://DefaultNamespace\" xmlns:tns2=\"http://comum.ws.casosdeuso.sgs.pec.bcb.gov.br\"><soap:Body><impl:getValoresSeriesVO><codigosSeries><codigosSeries>226</codigosSeries></codigosSeries><dataInicio>01/08/2022</dataInicio><dataFim>15/08/2022</dataFim></impl:getValoresSeriesVO></soap:Body></soap:Envelope>",
+  null
+]

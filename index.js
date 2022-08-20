@@ -30,19 +30,34 @@ const routes = express.Router();
 app.use("/", routes);
 
 //* Services
-const wsdlClient = async () => {
+const wsdlClientAsync = async () => {
   const url = "https://www3.bcb.gov.br/wssgs/services/FachadaWSSGS?wsdl";
   const client = await soap.createClientAsync(url);
   return client;
 }
 
-const getValorAsync = async (code, date) => {
-  const client = await wsdlClient();
-  const args = { codigoSerie: parseInt(code), data: DateTime.fromFormat(date, "dd/MM/yyyy").toFormat("dd/MM/yyyy") };
-  const result = await client.getValorAsync(args);
-  return result[0].getValorReturn["$value"];
-}
+const fetchValorRangeVOAsync = async (codes, startDate, endDate) => {
+  const client = await wsdlClientAsync();
+  const args = {
+    codigosSeries: codes,
+    dataInicio: DateTime.fromFormat(startDate, "dd/MM/yyyy").toFormat("dd/MM/yyyy"),
+    dataFim: DateTime.fromFormat(endDate, "dd/MM/yyyy").toFormat("dd/MM/yyyy")
+  };
+  const result = await client.getValoresSeriesVOAsync(args);
+  const valores = result[0].getValoresSeriesVOReturn.getValoresSeriesVOReturn.valores.valores;
+  const metricName = result[0].getValoresSeriesVOReturn.getValoresSeriesVOReturn.nomeCompleto["$value"];
+  let dataArray = [];
 
+  valores.forEach((item) => { dataArray.push(parseFloat(item.valor["$value"])) });
+  const resultObject = {
+    title: metricName,
+    startDate: startDate,
+    endDate: endDate,
+    data: dataArray,
+    length: dataArray.length
+  };
+  return resultObject;
+}
 
 const fetchData = async (code, date) => {
   const url = "https://www3.bcb.gov.br/wssgs/services/FachadaWSSGS?wsdl";
@@ -62,6 +77,7 @@ const fetchInfo = (code) => {
 
   const found = sgsBacen.filter(item => item.code === code)[0];
   if (found) {
+    console.log(`fetchInfo(${code})`.green);
     console.log(`code => ${code}`.red);
     console.log(`name: ${found.short_name}`.yellow);
 
@@ -71,58 +87,36 @@ const fetchInfo = (code) => {
   return error;
 }
 
+const mountChart = async (code, startDate, endDate) => {
+  const result = await fetchValorRangeVOAsync([code], startDate, endDate);
+  const config = {
+    colors: [asciichart.green],
+    height: 10
+  }
+  console.log(`${"#".repeat(result.length)}`.green);
+  console.log(`${" ".repeat(result.length-(result.length/2))} ${result.title}`.red);
+  console.log(`${"#".repeat(result.length)}`.green);
+  console.log(asciichart.plot([result.data], config));
+  console.log(`${" ".repeat(result.length-(result.length/2))}${result.startDate} - ${result.endDate}`);
+  console.log(`${"#".repeat(result.length)}\n\n`.green);
+
+}
 
 //* Controllers
-routes.route("/testChart").get((req, res) => {
-  const arr1 = new Array(120)
-  arr1[0] = Math.round(Math.random() * 15)
-  for (let i = 1; i < arr1.length; i++)
-    arr1[i] = arr1[i - 1] + Math.round(Math.random() * (Math.random() > 0.5 ? 2 : -2))
-
-  const arr2 = new Array(120)
-  arr2[0] = Math.round(Math.random() * 15)
-  for (let i = 1; i < arr2.length; i++)
-    arr2[i] = arr2[i - 1] + Math.round(Math.random() * (Math.random() > 0.5 ? 2 : -2))
-
-  const arr3 = new Array(120)
-  arr3[0] = Math.round(Math.random() * 15)
-  for (let i = 1; i < arr3.length; i++)
-    arr3[i] = arr3[i - 1] + Math.round(Math.random() * (Math.random() > 0.5 ? 2 : -2))
-
-  const arr4 = new Array(120)
-  arr4[0] = Math.round(Math.random() * 15)
-  for (let i = 1; i < arr4.length; i++)
-    arr4[i] = arr4[i - 1] + Math.round(Math.random() * (Math.random() > 0.5 ? 2 : -2))
-
-  const config = {
-    colors: [
-      asciichart.blue,
-      asciichart.green,
-      asciichart.magenta, // default color
-      asciichart.red, // equivalent to default
-    ],
-    height: 10
-  }
-
-  console.log(`\n\n                                          TESTE DE MONTAGEM DE GRÁFICO\n`);
-  console.log(asciichart.plot([arr1, arr2, arr3, arr4], config));
-  console.log(`\n                                  Gráfico de teste para verificação de funcionamento\n`);
-  res.send("Chart drawn! Look at the console!! LOOK AT IT!!!");
+routes.route("/bacen/seriesChart/:code").get(async (req, res) => {
+  // #swagger.summary = 'Some SUMMARY...'
+  // #swagger.description = 'Some description...'
+  // #swagger.parameters['code'] = { description: 'Some description...' }
+  const code = parseInt(req.params.code);
+  const startDate = req.body.startDate;
+  const endDate = req.body.endDate;
+  await mountChart(code, startDate, endDate).catch((err) => { console.log(err); res.status(400).send(err) });
+  res.json("Gráfico desenhado! Verifique o console.");
 });
 
-routes.route("/charter").get((req, res) => {
-  const array = [0.458, 0.125, 0.688, 0.741, 0.650, 0.400, 0.368, 0.254];
-  const config = {
-    height: 10
-  }
-  console.log(asciichart.plot([array], config));
-  res.json("done");
-
-})
-
-routes.route("/bacen").get(async (req, res) => {
-  const code = parseInt(req.query.code);
-  const date = req.query.date;
+routes.route("/bacen/metric/:code").get(async (req, res) => {
+  const code = parseInt(req.params.code);
+  const date = req.body.date;
   console.log(`code: ${code}`.red);
   console.log(`date: ${date}`.red);
 
@@ -130,12 +124,15 @@ routes.route("/bacen").get(async (req, res) => {
 
 });
 
-routes.route("/Info").get((req, res) => {
-  res.json(fetchInfo(req.query.code));
+routes.route("/bacen/metric/info/:code").get((req, res) => {
+  res.json(fetchInfo(req.params.code));
 
 });
 
-routes.route("/Ranged").get(async (req, res) => {
+
+//? TESTES
+
+routes.route("/testRanged1").get(async (req, res) => {
   const url = "https://www3.bcb.gov.br/wssgs/services/FachadaWSSGS?wsdl";
 
   const code = parseInt(req.query.code);
@@ -174,7 +171,67 @@ routes.route("/Ranged").get(async (req, res) => {
 
 });
 
-routes.route("/test").get(async (req, res) => {
-  res.json(await getValorAsync(226, "01/08/2022"));
+routes.route("/testRanged2").get(async (req, res) => {
+  const array = await fetchValorRangeVOAsync([226], "01/07/2022", "25/07/2022");
+  let newArray = [];
+  array.forEach((item, index) => { console.log(`item[${index}] => `, item) });
+  array.forEach((item, index) => { console.log(item.valor["$value"]) });
+  array.forEach((item) => { newArray.push(parseFloat(item.valor["$value"])) });
+  res.json(newArray);
+  console.log(asciichart.plot([array], config));
 
-})
+});
+
+routes.route("/testChart1").get((req, res) => {
+  const arr1 = new Array(120)
+  arr1[0] = Math.round(Math.random() * 15)
+  for (let i = 1; i < arr1.length; i++)
+    arr1[i] = arr1[i - 1] + Math.round(Math.random() * (Math.random() > 0.5 ? 2 : -2))
+
+  const arr2 = new Array(120)
+  arr2[0] = Math.round(Math.random() * 15)
+  for (let i = 1; i < arr2.length; i++)
+    arr2[i] = arr2[i - 1] + Math.round(Math.random() * (Math.random() > 0.5 ? 2 : -2))
+
+  const arr3 = new Array(120)
+  arr3[0] = Math.round(Math.random() * 15)
+  for (let i = 1; i < arr3.length; i++)
+    arr3[i] = arr3[i - 1] + Math.round(Math.random() * (Math.random() > 0.5 ? 2 : -2))
+
+  const arr4 = new Array(120)
+  arr4[0] = Math.round(Math.random() * 15)
+  for (let i = 1; i < arr4.length; i++)
+    arr4[i] = arr4[i - 1] + Math.round(Math.random() * (Math.random() > 0.5 ? 2 : -2))
+
+  const config = {
+    colors: [
+      asciichart.blue,
+      asciichart.green,
+      asciichart.magenta, // default color
+      asciichart.red, // equivalent to default
+    ],
+    height: 10
+  }
+
+  console.log(`\n\n                                          TESTE DE MONTAGEM DE GRÁFICO\n`);
+  console.log(asciichart.plot([arr1, arr2, arr3, arr4], config));
+  console.log(`\n                                  Gráfico de teste para verificação de funcionamento\n`);
+  res.send("Chart drawn! Look at the console!! LOOK AT IT!!!");
+});
+
+routes.route("/testChart2").get(async (req, res) => {
+  const array = await fetchValorRangeVOAsync([226], "01/07/2022", "25/07/2022");
+  let newArray = [];
+  array.forEach((item) => { newArray.push(parseFloat(item.valor["$value"])) });
+
+  const config = {
+    height: 10
+  }
+  console.log(asciichart.plot([newArray], config));
+  res.json(newArray);
+
+});
+
+routes.route("/bazinga").get((req, res) => {
+  res.send("<h1>Bazinga!</h1>");
+});
