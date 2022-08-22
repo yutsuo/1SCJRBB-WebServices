@@ -48,7 +48,7 @@
       }
     },
     "/bacen/metric/{code}": {
-      "get": {
+      "post": {
         "summary": "Traz o valor de uma série do BACEN",
         "description": "Dado um código válido, retorna o valor de uma série do BACEN para a data requerida.",
         "parameters": [
@@ -60,12 +60,27 @@
               "type": "string"
             },
             "description": "Código de série temporal do BACEN",
-            "example": 226
+            "example": 4392
           }
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Sucesso.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SingleResult"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SingleResult"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Deu ruim."
           }
         },
         "requestBody": {
@@ -73,7 +88,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/RangedDate"
+                "$ref": "#/components/schemas/SingleResult"
               }
             }
           }
@@ -82,7 +97,8 @@
     },
     "/bacen/metric/info/{code}": {
       "get": {
-        "description": "",
+        "summary": "Traz as informações de uma série do BACEN",
+        "description": "Dado um código válido, retorna os metadados de uma série do BACEN.",
         "parameters": [
           {
             "name": "code",
@@ -90,12 +106,29 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "description": "Código de série temporal do BACEN",
+            "example": 4391
           }
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Sucesso.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Info"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/Info"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Deu ruim."
           }
         }
       }
@@ -108,13 +141,19 @@
         "properties": {
           "code": {
             "type": "string",
-            "example": "226"
+            "example": "4392"
           }
+        },
+        "xml": {
+          "name": "Metric"
         }
       },
       "SingleDate": {
         "type": "string",
-        "example": "15/08/2022"
+        "example": "15/08/2022",
+        "xml": {
+          "name": "SingleDate"
+        }
       },
       "RangedDate": {
         "type": "object",
@@ -125,17 +164,63 @@
           },
           "endDate": {
             "type": "string",
-            "example": "01/07/2022"
+            "example": "01/05/2022"
           }
+        },
+        "xml": {
+          "name": "RangedDate"
         }
       },
       "SingleResult": {
         "type": "object",
         "properties": {
-          "value": {
-            "type": "number",
-            "example": 0.258
+          "15/08/2022": {
+            "type": "string",
+            "example": "13.55"
           }
+        },
+        "xml": {
+          "name": "SingleResult"
+        }
+      },
+      "Info": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "number",
+            "example": 4392
+          },
+          "short_name": {
+            "type": "string",
+            "example": "Taxa de juros - CDI acumulada no mês anualizada base "
+          },
+          "unit": {
+            "type": "string",
+            "example": "% a.a."
+          },
+          "periodicity": {
+            "type": "string",
+            "example": "M"
+          },
+          "start_date": {
+            "type": "string",
+            "example": "31-07-1986"
+          },
+          "latest_date": {
+            "type": "string",
+            "example": "ago/2022"
+          },
+          "source": {
+            "type": "string",
+            "example": "BCB-Demab"
+          },
+          "special_flag": {
+            "type": "string",
+            "example": "N"
+          }
+        },
+        "xml": {
+          "name": "Info"
         }
       }
     }

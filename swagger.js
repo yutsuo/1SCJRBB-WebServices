@@ -11,14 +11,24 @@ const doc = {
     },
     definitions: {
         Metric: {
-            code: "226"
+            code: "4392"
         },
         SingleDate: "15/08/2022",
         RangedDate: {
             startDate: "01/03/2022",
-            endDate: "01/07/2022"
+            endDate: "01/05/2022"
         },
-        SingleResult: { value: 0.258 }
+        SingleResult: { "15/08/2022": "13.55" },
+        Info: {
+            "code": 4392,
+            "short_name": "Taxa de juros - CDI acumulada no mês anualizada base ",
+            "unit": "% a.a.",
+            "periodicity": "M",
+            "start_date": "31-07-1986",
+            "latest_date": "ago/2022",
+            "source": "BCB-Demab",
+            "special_flag": "N"
+        }
     },
     host: "localhost:3001",
     basePath: "/",

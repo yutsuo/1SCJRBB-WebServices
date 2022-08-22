@@ -61,7 +61,7 @@ const fetchValorRangeVOAsync = async (codes, startDate, endDate) => {
 
 const fetchData = async (code, date) => {
   const url = "https://www3.bcb.gov.br/wssgs/services/FachadaWSSGS?wsdl";
-  const args = { codigoSerie: parseInt(code), data: DateTime.fromFormat(date, "dd/MM/yyyy").toFormat("dd/MM/yyyy") };
+  const args = { codigoSerie: parseInt(code), data: date };
   const client = await soap.createClientAsync(url);
   const results = await client.getValorAsync(args);
 
@@ -93,29 +93,26 @@ const mountChart = async (code, startDate, endDate) => {
     colors: [asciichart.green],
     height: 10
   }
-  console.log(`${"#".repeat(result.length)}`.green);
+  console.log(`${"#".repeat(result.length + (result.length / 3.5))}`.green);
   console.log(`${" ".repeat(result.length - (result.length / 2))} ${result.title}`.red);
-  console.log(`${"#".repeat(result.length)}`.green);
+  console.log(`${"#".repeat(result.length + (result.length / 3.5))}`.green);
   console.log(asciichart.plot([result.data], config));
   console.log(`${" ".repeat(result.length - (result.length / 2))}${result.startDate} - ${result.endDate}`);
-  console.log(`${"#".repeat(result.length)}\n\n`.green);
+  console.log(`${"#".repeat(result.length + (result.length / 3.5))}\n\n`.green);
 
 }
 
 //* Controllers
 routes.route("/bacen/seriesChart/:code").post(async (req, res) => {
-  // #swagger.summary = 'Cria no console um gráfico de uma série do BACEN';
-  // #swagger.description = 'Cria no console um gráfico de uma série do BACEN'
-  // #swagger.parameters['code'] = { description: 'Código de série temporal do BACEN', type: 'integer', required: true, example: 226 }
-  // #swagger.requestBody = { required: true, content: { "application/json": { schema: { $ref: "#/definitions/RangedDate" } } } }
-  /* swagger.responses[200] = {
-    description: 'Gráfico desenhado! Verifique o console.',
-    schema: { message: 'Gráfico desenhado! Verifique o console.' }
-  } */
-  /* #swagger.responses[200] = {
+  /*
+  #swagger.summary = 'Cria no console um gráfico de uma série do BACEN';
+  #swagger.description = 'Cria no console um gráfico de uma série do BACEN'
+  #swagger.parameters['code'] = { description: 'Código de série temporal do BACEN', type: 'integer', required: true, example: 226 }
+  #swagger.requestBody = { required: true, content: { "application/json": { schema: { $ref: "#/definitions/RangedDate" } } } }
+  #swagger.responses[200] = {
     description: "Gráfico desenhado! Verifique o console do NodeJS."
-  } */
-    /* #swagger.responses[400] = {
+  }
+  #swagger.responses[400] = {
     description: "Deu ruim."
   } */
 
@@ -126,24 +123,17 @@ routes.route("/bacen/seriesChart/:code").post(async (req, res) => {
   res.status(200).json("Gráfico desenhado! Verifique o console.");
 });
 
-routes.route("/bacen/metric/:code").get(async (req, res) => {
-  // #swagger.summary = 'Traz o valor de uma série do BACEN';
-  // #swagger.description = 'Dado um código válido, retorna o valor de uma série do BACEN para a data requerida.'
-  // #swagger.parameters['code'] = { description: 'Código de série temporal do BACEN', type: 'integer', required: true, example: 226 }
-  // #swagger.requestBody = { required: true, content: { "application/json": { schema: { $ref: "#/definitions/RangedDate" } } } }
-  /* swagger.responses[200] = {
-    description: 'Gráfico desenhado! Verifique o console.',
-    schema: { message: 'Gráfico desenhado! Verifique o console.' }
-  } */
-  /* #swagger.responses[200] = {
-    description: "Sucesso."
-    "schema": {
-    "type": "array",
-    "items": {
-    "$ref": "#/definitions/SingleResult"
-    }
-  } */
-    /* #swagger.responses[400] = {
+routes.route("/bacen/metric/:code").post(async (req, res) => {
+  /*
+  #swagger.summary = 'Traz o valor de uma série do BACEN';
+  #swagger.description = 'Dado um código válido, retorna o valor de uma série do BACEN para a data requerida.'
+  #swagger.parameters['code'] = { description: 'Código de série temporal do BACEN', type: 'integer', required: true, example: 4392 }
+  #swagger.requestBody = { required: true, content: { "application/json": { schema: { $ref: "#/definitions/SingleResult" } } } }
+  #swagger.responses[200] = {
+    description: 'Sucesso.',
+    schema: { "$ref": "#/definitions/SingleResult" }
+  }
+  #swagger.responses[400] = {
     description: "Deu ruim."
   } */
   const code = parseInt(req.params.code);
@@ -156,6 +146,16 @@ routes.route("/bacen/metric/:code").get(async (req, res) => {
 });
 
 routes.route("/bacen/metric/info/:code").get((req, res) => {
+  // #swagger.summary = 'Traz as informações de uma série do BACEN';
+  // #swagger.description = 'Dado um código válido, retorna os metadados de uma série do BACEN.'
+  // #swagger.parameters['code'] = { description: 'Código de série temporal do BACEN', type: 'integer', required: true, example: 4391 }
+  /* #swagger.responses[200] = {
+    description: 'Sucesso.',
+    schema: { "$ref": "#/definitions/Info" }
+  } */
+  /* #swagger.responses[400] = {
+  description: "Deu ruim."
+} */
   res.json(fetchInfo(req.params.code));
 
 });
