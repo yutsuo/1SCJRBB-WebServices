@@ -112,6 +112,13 @@ routes.route("/bacen/seriesChart/:code").post(async (req, res) => {
     description: 'Gráfico desenhado! Verifique o console.',
     schema: { message: 'Gráfico desenhado! Verifique o console.' }
   } */
+  /* #swagger.responses[200] = {
+    description: "Gráfico desenhado! Verifique o console do NodeJS."
+  } */
+    /* #swagger.responses[400] = {
+    description: "Deu ruim."
+  } */
+
   const code = parseInt(req.params.code);
   const startDate = req.body.startDate;
   const endDate = req.body.endDate;

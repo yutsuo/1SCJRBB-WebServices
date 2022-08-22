@@ -29,10 +29,10 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Gráfico desenhado! Verifique o console do NodeJS."
           },
           "400": {
-            "description": "Bad Request"
+            "description": "Deu ruim."
           }
         },
         "requestBody": {
