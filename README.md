@@ -8,7 +8,7 @@ Simples backend feito em NodeJS que consome o API WDSL de SÉRIES TEMPORAIS do B
 
 O nosso API é capaz de:
 
-- obter informações sobre as séries existentes mais populares
+- obter informações de metadados sobre as séries existentes mais populares
 - obter o valor de qualquer série temporal existente, por data fixa ou por período
 - para consulta de séries temporais por períodos implementamos um contrutor de gráficos no próprio console do NodeJS.
 
