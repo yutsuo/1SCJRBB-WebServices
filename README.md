@@ -16,7 +16,7 @@ Executando o projeto
 
 1. Clone o repositório
 2. No terminal, navegue até o diretório raíz do repositório
-3. execute o comando `docker-compose up`
+3. Execute o comando `docker-compose up`
 
 Documentação da API (OpenAPI 3):
 
