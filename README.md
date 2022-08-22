@@ -13,9 +13,12 @@ O nosso API é capaz de:
 - para consulta de séries temporais por períodos implementamos um contrutor de gráficos no próprio console do NodeJS.
 
 Executando o projeto
-> `docker-compose up`
 
-Documentação da API:
+1. Clone o repositório
+2. No terminal, navegue até o diretório raíz do repositório
+3. execute o comando `docker-compose up`
+
+Documentação da API (OpenAPI 3):
 
 > <http://localhost:3001/api>
 >
