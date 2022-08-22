@@ -16,7 +16,7 @@ const app = express();
 
 app.use(cors());
 app.use(bodyParser.json());
-app.use('/doc', swaggerUi.serve, swaggerUi.setup(swaggerFile));
+app.use('/api', swaggerUi.serve, swaggerUi.setup(swaggerFile));
 
 colors.enable();
 dotenv.config();

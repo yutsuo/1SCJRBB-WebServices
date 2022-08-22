@@ -2,25 +2,22 @@
 
 ## Descrição
 
-Wrapper em NodeJS para chamadas SOAP.
-
-Conectando na base de SÉRIES TEMPORAIS em WDSL do Banco Central do Brasil:
+Simples backend feito em NodeJS que consome o API WDSL de SÉRIES TEMPORAIS do Banco Central do Brasil:
 
 > <https://www3.bcb.gov.br/sgspub/localizarseries/localizarSeries.do?method=prepararTelaLocalizarSeries>
 
-Por enquanto só funciona o básico.
+O nosso API é capaz de:
 
-Subir o docker-compose
+- obter informações sobre as séries existentes mais populares
+- obter o valor de qualquer série temporal existente, por data fixa ou por período
+- para consulta de séries temporais por períodos implementamos um contrutor de gráficos no próprio console do NodeJS.
 
-Requisição de teste:
+Executando o projeto
+> `docker-compose up`
 
-> <http://localhost:3001/bacen?code=12&date=30/01/2015>
+Documentação da API:
 
-Onde:
-    code - código da métrica a ser consultada (12=CDI diário)
-    date - data da métrica a ser consultada (30/01/2015)
-
-Até onde testei vai funcionar com qualquer código da página, respeitando o tipo de data esperado. Para campos mensais a data deve ser o último dia do mês.
+> <http://localhost:3001/api>
 
 ## Enunciado do Trabalho
 
