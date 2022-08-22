@@ -62,5 +62,4 @@ Observações:
 1. Pense em criar um MVP (Minimum Viable Product);
 2. Para deploy, utilize o Heroku (API) e GitHub Pages (SPA e WPA);
 3. Evite expor informações protegidas por sigilos empresariais; utilize uma abordagem "agnóstica" (ser aplicável em qualquer empresa do ramo financeiro);
-4. Se houver necessidade de manter o repositório privado, adicione meu usuário como convidado:
-profeduardo.galego@fiap.com.br (GitHub e BitBucket).
+4. Se houver necessidade de manter o repositório privado, adicione meu usuário como convidado: x (GitHub e BitBucket).

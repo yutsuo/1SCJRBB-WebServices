@@ -127,6 +127,25 @@ routes.route("/bacen/seriesChart/:code").post(async (req, res) => {
 });
 
 routes.route("/bacen/metric/:code").get(async (req, res) => {
+  // #swagger.summary = 'Traz o valor de uma série do BACEN';
+  // #swagger.description = 'Dado um código válido, retorna o valor de uma série do BACEN para a data requerida.'
+  // #swagger.parameters['code'] = { description: 'Código de série temporal do BACEN', type: 'integer', required: true, example: 226 }
+  // #swagger.requestBody = { required: true, content: { "application/json": { schema: { $ref: "#/definitions/RangedDate" } } } }
+  /* swagger.responses[200] = {
+    description: 'Gráfico desenhado! Verifique o console.',
+    schema: { message: 'Gráfico desenhado! Verifique o console.' }
+  } */
+  /* #swagger.responses[200] = {
+    description: "Sucesso."
+    "schema": {
+    "type": "array",
+    "items": {
+    "$ref": "#/definitions/SingleResult"
+    }
+  } */
+    /* #swagger.responses[400] = {
+    description: "Deu ruim."
+  } */
   const code = parseInt(req.params.code);
   const date = req.body.date;
   console.log(`code: ${code}`.red);

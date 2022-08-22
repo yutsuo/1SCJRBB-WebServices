@@ -49,7 +49,8 @@
     },
     "/bacen/metric/{code}": {
       "get": {
-        "description": "",
+        "summary": "Traz o valor de uma série do BACEN",
+        "description": "Dado um código válido, retorna o valor de uma série do BACEN para a data requerida.",
         "parameters": [
           {
             "name": "code",
@@ -57,12 +58,24 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "description": "Código de série temporal do BACEN",
+            "example": 226
           }
         ],
         "responses": {
           "200": {
             "description": "OK"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RangedDate"
+              }
+            }
           }
         }
       }
@@ -113,6 +126,15 @@
           "endDate": {
             "type": "string",
             "example": "01/07/2022"
+          }
+        }
+      },
+      "SingleResult": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "number",
+            "example": 0.258
           }
         }
       }

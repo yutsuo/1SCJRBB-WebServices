@@ -17,7 +17,8 @@ const doc = {
         RangedDate: {
             startDate: "01/03/2022",
             endDate: "01/07/2022"
-        }
+        },
+        SingleResult: { value: 0.258 }
     },
     host: "localhost:3001",
     basePath: "/",
