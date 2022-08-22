@@ -9,7 +9,7 @@ Segue abaixo uma breve descrição dos serviços disponibilizados:
 
 Obs.: para as séries de periodicidade trimestral e quadrimestral o valor retornado pelo sistema refere-se a todo o período, ainda que a data retornada informe o mês do início do período no formato mm/aaaa. Por exemplo, ainda que uma série trimestral referente ao 2º trimestre de 2010 traga a data 4/2010 (início do trimestre), o valor corresponde a todo o trimestre. De modo semelhante, para séries de periodicidade semanal ou quinzenal o valor retornado pelo sistema refere-se a todo o período, ainda que a data retornada informe o início do período no formato dd/mm/aaaa. Por exemplo, ainda que uma série semanal referente ao mês de fevereiro de 2017 traga as datas 6/2/2017, 13/2/2017, 20/2/2017 e 27/2/2017 (segundas-feiras), os valores correspondem à cada semana inteira.
 
-getUltimoValorVO - Recupera o último valor de uma determinada série e retorna um objeto do tipo WSSerieVO.
+> getUltimoValorVO - Recupera o último valor de uma determinada série e retorna um objeto do tipo WSSerieVO.
 
   Parâmetros:
 
@@ -19,7 +19,7 @@ getUltimoValorVO - Recupera o último valor de uma determinada série e retorna 
 
      WSSerieVO - Objeto série.
 
-getUltimoValorXML- Recupera o último valor de uma determinada série e retorna o resultado em formato XML.
+> getUltimoValorXML- Recupera o último valor de uma determinada série e retorna o resultado em formato XML.
 
   Parâmetros:
 
@@ -28,7 +28,8 @@ getUltimoValorXML- Recupera o último valor de uma determinada série e retorna 
   Retorno:
 
      String - String contendo o resultado da consulta em formato XML.
-getValor - Recupera o valor de uma série em uma determinada data (dd/MM/aaaa).
+
+> getValor - Recupera o valor de uma série em uma determinada data (dd/MM/aaaa).
 
   Parâmetros:
 
@@ -39,7 +40,7 @@ getValor - Recupera o valor de uma série em uma determinada data (dd/MM/aaaa).
 
      BigDecimal - Objeto contendo o valor.
 
-getValorEspecial - Recupera o valor de uma série especial em um período.
+> getValorEspecial - Recupera o valor de uma série especial em um período.
 
   Parâmetros:
 
@@ -51,7 +52,7 @@ getValorEspecial - Recupera o valor de uma série especial em um período.
 
      BigDecimal - Objeto contendo o valor.
 
-getValoresSeriesXML - Recupera os valores de uma ou mais séries dentro de um determinado período. O resultado da consulta é devolvido ao cliente em formato XML.
+> getValoresSeriesXML - Recupera os valores de uma ou mais séries dentro de um determinado período. O resultado da consulta é devolvido ao cliente em formato XML.
 
   Parâmetros:
 
@@ -62,7 +63,8 @@ getValoresSeriesXML - Recupera os valores de uma ou mais séries dentro de um de
   Retorno:
 
      String - String contendo o resultado da consulta em formato XML.
-getValoresSeriesVO - Recupera os valores de uma ou mais séries dentro de um determinado período e retorna o resultado em forma de Array de objetos do tipo WSSerieVO.
+
+> getValoresSeriesVO - Recupera os valores de uma ou mais séries dentro de um determinado período e retorna o resultado em forma de Array de objetos do tipo WSSerieVO.
 
   Parâmetros:
 

@@ -18,6 +18,8 @@ Executando o projeto
 Documentação da API:
 
 > <http://localhost:3001/api>
+>
+> Compilamos uma lista de métricas mais consumidas no arquivo `sgs-bacen.csv` contido nesse repositório Git.
 
 ## Enunciado do Trabalho
 

@@ -94,24 +94,29 @@ const mountChart = async (code, startDate, endDate) => {
     height: 10
   }
   console.log(`${"#".repeat(result.length)}`.green);
-  console.log(`${" ".repeat(result.length-(result.length/2))} ${result.title}`.red);
+  console.log(`${" ".repeat(result.length - (result.length / 2))} ${result.title}`.red);
   console.log(`${"#".repeat(result.length)}`.green);
   console.log(asciichart.plot([result.data], config));
-  console.log(`${" ".repeat(result.length-(result.length/2))}${result.startDate} - ${result.endDate}`);
+  console.log(`${" ".repeat(result.length - (result.length / 2))}${result.startDate} - ${result.endDate}`);
   console.log(`${"#".repeat(result.length)}\n\n`.green);
 
 }
 
 //* Controllers
-routes.route("/bacen/seriesChart/:code").get(async (req, res) => {
-  // #swagger.summary = 'Some SUMMARY...'
-  // #swagger.description = 'Some description...'
-  // #swagger.parameters['code'] = { description: 'Some description...' }
+routes.route("/bacen/seriesChart/:code").post(async (req, res) => {
+  // #swagger.summary = 'Cria no console um gráfico de uma série do BACEN';
+  // #swagger.description = 'Cria no console um gráfico de uma série do BACEN'
+  // #swagger.parameters['code'] = { description: 'Código de série temporal do BACEN', type: 'integer', required: true, example: 226 }
+  // #swagger.requestBody = { required: true, content: { "application/json": { schema: { $ref: "#/definitions/RangedDate" } } } }
+  /* swagger.responses[200] = {
+    description: 'Gráfico desenhado! Verifique o console.',
+    schema: { message: 'Gráfico desenhado! Verifique o console.' }
+  } */
   const code = parseInt(req.params.code);
   const startDate = req.body.startDate;
   const endDate = req.body.endDate;
   await mountChart(code, startDate, endDate).catch((err) => { console.log(err); res.status(400).send(err) });
-  res.json("Gráfico desenhado! Verifique o console.");
+  res.status(200).json("Gráfico desenhado! Verifique o console.");
 });
 
 routes.route("/bacen/metric/:code").get(async (req, res) => {
@@ -133,6 +138,7 @@ routes.route("/bacen/metric/info/:code").get((req, res) => {
 //? TESTES
 
 routes.route("/testRanged1").get(async (req, res) => {
+  // #swagger.ignore = true
   const url = "https://www3.bcb.gov.br/wssgs/services/FachadaWSSGS?wsdl";
 
   const code = parseInt(req.query.code);
@@ -172,6 +178,7 @@ routes.route("/testRanged1").get(async (req, res) => {
 });
 
 routes.route("/testRanged2").get(async (req, res) => {
+  // #swagger.ignore = true
   const array = await fetchValorRangeVOAsync([226], "01/07/2022", "25/07/2022");
   let newArray = [];
   array.forEach((item, index) => { console.log(`item[${index}] => `, item) });
@@ -183,6 +190,7 @@ routes.route("/testRanged2").get(async (req, res) => {
 });
 
 routes.route("/testChart1").get((req, res) => {
+  // #swagger.ignore = true
   const arr1 = new Array(120)
   arr1[0] = Math.round(Math.random() * 15)
   for (let i = 1; i < arr1.length; i++)
@@ -220,6 +228,7 @@ routes.route("/testChart1").get((req, res) => {
 });
 
 routes.route("/testChart2").get(async (req, res) => {
+  // #swagger.ignore = true
   const array = await fetchValorRangeVOAsync([226], "01/07/2022", "25/07/2022");
   let newArray = [];
   array.forEach((item) => { newArray.push(parseFloat(item.valor["$value"])) });
@@ -233,5 +242,6 @@ routes.route("/testChart2").get(async (req, res) => {
 });
 
 routes.route("/bazinga").get((req, res) => {
+  // #swagger.ignore = true
   res.send("<h1>Bazinga!</h1>");
 });
